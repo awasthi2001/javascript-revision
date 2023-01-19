@@ -1,4 +1,8 @@
 Q1. How Javascript works ?
+
+
+
+
 Ans. When a javascript code is run a global execution context is created.
 
   ### The Execution Context is created with two Phases
