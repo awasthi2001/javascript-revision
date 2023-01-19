@@ -21,7 +21,7 @@ Ans. When a javascript code is run a global execution context is created.
    var n = 2;
 
    function cube(num){
-    var ans = num*num*num;
+    var ans = num x num x num;
     return ans;
    }
 
