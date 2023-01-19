@@ -50,7 +50,7 @@ Code Execution Phase :
  In this function, there are two phases memory creation phase and code execution phase
  in first phase it allocates memory as undefined 
  to num and ans 
- Now coming to code execution phase it will check like the value is 2 so it allocates memory of num is 2. ans = 2*2*2 , ans = 8;
+ Now coming to code execution phase it will check like the value is 2 so it allocates memory of num is 2. ans = 2x2x2 , ans = 8;
  after this line it will see the return keyword
  it basically return the control back to where the function was called.
  And after this function execution is deleted and it 
