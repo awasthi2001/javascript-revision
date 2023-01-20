@@ -1,6 +1,3 @@
-
-
-
 var a = 1;
 x(); //these functions are working because of hoisting
 y()
