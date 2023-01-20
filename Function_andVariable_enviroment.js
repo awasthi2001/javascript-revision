@@ -4,8 +4,8 @@ y()
 function x(){
     var a = 10;
     console.log(a)//it will print 10 because when x function is called and brand new function execution context is created and in the first phase
-    //(memory creation phase) the brand x is created when and got undefined in the first phase and in the second phase 10 is assigned to a
-    //when it willl see console.log(a) it will print 10 after that it will return back to the line where it called 
+    //(memory creation phase) the brand  new x is created  and got undefined in the first phase and in the second phase 10 is assigned to a
+    //when it willl see console.log(a) it will print 10 after that it will return back to the line where it was called 
 }
 
 
