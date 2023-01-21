@@ -27,3 +27,4 @@ there will be two phases
  Now in code execution phase it will see console.log(b) first it will look it inside the local memory but it
  is not there so it will find inside its parent lexical enviroment and print 10
 */
+
