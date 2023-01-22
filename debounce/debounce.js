@@ -6,7 +6,7 @@ console.log('data fetching',val)
 }
 
 let myBetterFunction = debounce(getData,1000);
-myBetterFunction()
+
 function debounce(fn,delay){
  let timerid;
  return function(){
