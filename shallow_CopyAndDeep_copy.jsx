@@ -20,7 +20,7 @@ obj2.age.is = 48;
 
 console.log(obj)
 console.log(obj2)
-
+  
 /*
     Deep Copy :- Deep copy means that all level of the object are copied . This is a true copy of the object.
 
