@@ -5,24 +5,43 @@ After updating a property in the first level of the cloned objects, the original
 After updating a property in a deeper level, the original property is also updated. This happens because, in this case, deeper levels are referenced, not copied.
 */
 
-let obj = {
+// let obj = {
+//     name : "akshansh",
+//     age : {
+//         is : 25
+//     }
+// }
+
+// let obj2 = {...obj};
+// console.log(obj2)
+
+// obj2.name = "adarsh";
+// obj2.age.is = 48;
+
+// console.log(obj)
+// console.log(obj2)
+  
+/*
+    Deep Copy :- Deep copy means that all level of the object are copied . This is a true copy of the object.
+   
+    After updating a property in the first level of the cloned objects, the original property is not updated.
+    After updating a property in a deeper level, the original property is neither updated. This happens because, in this case, deeper levels are also copied.
+
+*/
+
+let obj_deep = {
     name : "akshansh",
     age : {
         is : 25
     }
 }
 
-let obj2 = {...obj};
-console.log(obj2)
+let obj2_deep = JSON.parse(JSON.stringify(obj_deep));
+console.log(obj2_deep)
 
-obj2.name = "adarsh";
-obj2.age.is = 48;
-
-console.log(obj)
-console.log(obj2)
-  
-/*
-    Deep Copy :- Deep copy means that all level of the object are copied . This is a true copy of the object.
+obj2_deep.name = "adarsh";
+obj2_deep.age.is = 48;
 
 
-*/
+console.log(obj_deep)
+console.log(obj2_deep)
