@@ -85,18 +85,32 @@ multiplybytwo1(3)
 
 
 
-function counter(){
-    var count = 0;
-    return function(){
-        count++;
-        console.log(count)
+// function counter(){
+//     var count = 0;
+//     return function(){
+//         count++;
+//         console.log(count)
+//     }
+// }
+
+// let a = counter()
+// a();
+
+function fact(n){
+    if(n==1){
+        return 1;
     }
+    return n*fact(n-1);
 }
 
-let a = counter()
-a();
+console.log(fact(5))
 
+function Person(name, age){
+    this.name = name;
+    this.age = age;
+}
 
-
+let person = new Person("akshansh",52);
+console.log(person)
 
 
