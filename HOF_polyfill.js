@@ -28,7 +28,7 @@ Array.prototype.Myfilter = function(fn){
         if(val){
             arr.push(this[i]);
         }
-    }
+    } 
     return arr;
 }
 
