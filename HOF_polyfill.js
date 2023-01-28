@@ -36,7 +36,7 @@ let ans2 = arr.Myfilter((ele)=>{
     return ele%2==0;
 })
 console.log(ans2)
-
+ 
 
 /* polyfill for reduce */
 
