@@ -58,6 +58,22 @@ let arr4 = [1,2,3,4]
 // if initial value is there then our acc is initial value and 
 //if initial value is not there then our initial value is our first element of array
 let ans3 = arr4.Myreduce((acc,ele)=>{
- return acc+ele;
+ return acc+ele; 
 })
 console.log(ans3)
+
+
+
+/* ForEach polyfill*/
+
+Array.prototype.MyForEach = function(fn){
+  for(let i=0; i<this.length; i++){
+      fn(this[i],i,this)
+  }
+
+}
+let arr5 = [1,2,3,4]
+arr5.MyForEach((ele)=>{
+    console.log(ele*2);
+})
+
