@@ -6,7 +6,7 @@ let arr = [1,2,3,4,5,6];
 
 Array.prototype.Mymap = function(fn){
     let ans = [];
-  for(let i = 0; i<this.length; i++){
+   for(let i = 0; i<this.length; i++){
      let val = fn(this[i],i,this);
      ans.push(val);
   }
@@ -39,4 +39,25 @@ console.log(ans2)
  
 
 /* polyfill for reduce */
-
+Array.prototype.Myreduce = function(fn,initialValue){
+    let acc = 0;
+    if(initialValue!=undefined){    
+        acc = initialValue;  
+       for(let i=0; i<this.length; i++){
+        acc= fn(acc,this[i],i,this);
+       }
+    }else{
+        acc = this[0];
+        for(let i=1; i<this.length; i++){
+         acc = fn(acc,this[i],i,this);
+        }
+    }
+    return acc;
+}
+let arr4 = [1,2,3,4]
+// if initial value is there then our acc is initial value and 
+//if initial value is not there then our initial value is our first element of array
+let ans3 = arr4.Myreduce((acc,ele)=>{
+ return acc+ele;
+})
+console.log(ans3)
