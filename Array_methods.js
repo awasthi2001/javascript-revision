@@ -51,3 +51,30 @@ console.log(cities2.slice(0,2))
 let x = cities2.splice(0,1) 
 console.log(cities2)// ["indore","umariya"]
 console.log(x) //["bhopal"]
+
+
+//8. indexOf() method :- It finds the index of the element in an array
+//                        and return -1 if element is not found
+let arr5 = [1,2,3,4,5];
+
+console.log(arr5.indexOf(6))
+
+//9. includes() method :- It returns true if an array contains a specified value or returns false if the value is not found
+
+
+let c = arr5.includes(8)
+
+console.log(c)
+
+
+
+//10 sort method :  sort the array 
+
+let num = [8,6,8,4,7,22,4,6]
+num.sort((a,b)=>a-b);
+console.log(num)
+ 
+// findIndex - it returns the index of the first element based on the condition
+
+let n = num.findIndex((ele)=>ele>5)
+console.log(n)
