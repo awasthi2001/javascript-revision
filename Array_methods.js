@@ -34,4 +34,20 @@ console.log(cities); // ["vidisha","bhopal","indore","umariya"]
 console.log(cities.length)//4
 
 
+//6. slice() method :- It slices out a part of an array according to the given arguments
 
+let cities2 = ["bhopal", "indore", "umariya"];
+
+
+console.log(cities2.slice(0,2))
+//console.log(cities2)
+
+
+
+//7.splice method :-Removes elements from an array and, if necessary, 
+//inserts new elements in their place, returning the deleted elements.
+
+
+let x = cities2.splice(0,1) 
+console.log(cities2)// ["indore","umariya"]
+console.log(x) //["bhopal"]
