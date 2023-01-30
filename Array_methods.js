@@ -13,6 +13,11 @@ console.log(arr)   // [1,2,3,4,8]
 // and if try to console.log(arr.push(8)) it will return the new length of the array
 
 
-//3. shift() method :- It removes the first array element and
+//3. shift() method :- It removes the first array element and "shift" all the other elements to a lower index
+
+let arr2 = [1,2,3,4];
+arr2.shift();
+//console.log(arr2.shift()); // 1
+console.log(arr2) // [2,3,4]
 
 
