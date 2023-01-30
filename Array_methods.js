@@ -26,3 +26,12 @@ let cities = ["bhopal", "indore", "umariya"];
 cities.unshift("vidisha"); // if we try to console.log(cities.unshift("vidisha")) it returns the new length of the array
 
 console.log(cities); // ["vidisha","bhopal","indore","umariya"]
+
+//5. length method
+// it return the length of the array
+
+
+console.log(cities.length)//4
+
+
+
