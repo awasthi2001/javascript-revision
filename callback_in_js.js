@@ -4,7 +4,7 @@ they can used as an argument to the function.
 
 */
 
-function x(y){
+function x(y){ // function x is a higher order function
  y()
 }
 
@@ -13,3 +13,11 @@ function y(){
 }
 
 x(y)
+
+
+
+/*
+What is higher order function ?
+Ans. A higher order function are the functions that take other functions as arguments or return functions as their result
+
+*/
