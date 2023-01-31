@@ -12,7 +12,7 @@ function x(){
 
 function y(){
     var a = 100;
-    console.log(a);
+    console.log(a); 
 } 
 
 
