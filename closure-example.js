@@ -114,3 +114,60 @@ let person = new Person("akshansh",52);
 console.log(person)
 
 
+//without closure 
+
+// var count = 0;
+// function increment(){
+//     count++;
+//     console.log(count)
+// }
+// in the above example anyone can access this count and change the value of count
+
+//with closure
+
+function counter(){
+    var count = 0;
+return function increment(){
+    count++;
+    console.log("count",count)
+}
+}
+
+let Counter8 = counter();
+Counter8();
+//in the above example no one can access the count and can not change the value
+
+//to improve this we can write
+
+function Counter(){
+    var count = 0;
+    this.increment = function increment(){
+        console.log("a",count++)
+    }
+
+}
+
+
+let counre = new Counter();
+counre.increment()
+counre.increment()
+
+//function currying
+
+function multiplys(a){
+    return function(b){
+        console.log(a*b);
+    }
+}
+
+let multiplybytwo5 = multiplys(2);
+multiplybytwo5(3)
+
+
+//Disadvantages of closures :-
+/*
+Overconsumption of memory when using closures everytime as those closed variable are not garbage collected till program expires . 
+So when creating many closures more memory is accumulated .
+
+Garbage Collector:- Program in javascript engine or browser thats free up unused memory.
+*/
