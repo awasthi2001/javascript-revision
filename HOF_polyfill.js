@@ -11,7 +11,7 @@ Array.prototype.Mymap = function(fn){
      ans.push(val);
   }
   return ans;
-}
+5}
 
 let ans = arr.Mymap((ele)=>{
     return ele*2;
