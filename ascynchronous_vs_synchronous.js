@@ -12,6 +12,19 @@ console.log("inside settimeout")
 },1000)
 
 console.log("last");
+
+let prom = new Promise(function(resolve,reject) {
+  if(true){
+    resolve("success")
+  }else{
+    reject("error")
+  }
+})
+
+prom.then((res)=>{
+console.log(res)
+})
+
 /*
 Exaplanation of above example :- 
  In the above example the first console.log is pushed to the callstack and "first" is printed on the console and the task is popped of from the callstack and Next settimeout is pushed to the queue and  until then second console.log()
@@ -48,4 +61,24 @@ Event Loop :- We all know that javascript is a single threaded language it can d
 
     Callback queue :- The Callback queue holds the asynchronous functions which are ready to executed . The items present in the queue           
     are only called when the callstack is empty.
+
+ Microtask Queue :- All the callback functions comes from the promises go in the microtask queue like fetch.
+ 
+ 1). If the task in microtask queue is keep creating a new task . The function in callback queue never gets a chance to run .This is called
+ call starvation.
+
+ Difference between asynchronous and synchronous
+ Asynchronous :- It does not block further execution while one or more operations are in progress.
+ Synchronous :- 1)It has a blocking architecture 
+                2) While one operation is being performed other operations are blocked the completion of first will trigger next 
+                and so on.
+*/
+
+
+/* Difference between readFile() and readFileSync() ?
+Ans. In readFile() we can read a file in a non-blocking asynchronous way but in readFileSync() we can read the file in synchrous way . In this we 
+     are telling node.js to block other processes and do the current file reading process.
+  
+ This is when the fs.readFileSync() method is called . The original node program stop executing and node waits for for the fs.readFileSync() method to get get executed .
+ 
 */
