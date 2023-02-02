@@ -34,3 +34,5 @@ let obj = {
 z(obj)
 
 console.log(obj)
+
+//Now the output will be obj = {name : "amit"}

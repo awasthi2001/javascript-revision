@@ -55,3 +55,10 @@ function getRootList(arr,callback){
 getRootList([1,9,4,16,36,25],(roots)=>{
     console.log(roots)
 })
+
+function ans(x){
+    return x*x - 1;
+}
+
+let a = ans(ans(ans(ans(3))))
+console.log(a)
