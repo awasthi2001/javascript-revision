@@ -82,3 +82,16 @@ Ans. In readFile() we can read a file in a non-blocking asynchronous way but in 
  This is when the fs.readFileSync() method is called . The original node program stop executing and node waits for for the fs.readFileSync() method to get get executed .
  
 */
+
+fs.readFile('./input2.txt',{encoding:'utf-8'},(err,data)=>{
+    if(err){
+        console.log(err)
+    }else{
+        console.log(data)
+    }    
+})
+
+const data = fs.readFileSync('./input1.txt',{encoding:'utf-8'})
+console.log(data)
+
+
