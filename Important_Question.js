@@ -57,3 +57,27 @@ while(i<j){
 console.log(arr);
 
 
+//Write a code to find the elements occuring only once in the array input : [1,2,3,4,5,1,2] output : [3,4,5]
+
+
+let nums = [1,2,3,4,5,1,2];
+
+let map = new Map();
+
+for(let i=0; i<nums.length; i++){
+  let count = 1;
+  if(map.has(nums[i])){
+    let v = map.get(nums[i]);
+    count = v+1;
+  }else{
+    count = 1;
+  }
+  map.set(nums[i], count);
+}
+let ans = [];
+map.forEach(function(value,key){
+  if(value==1){
+     ans.push(key);
+  }
+})
+console.log(ans);
