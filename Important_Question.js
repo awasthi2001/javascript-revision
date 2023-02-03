@@ -81,3 +81,24 @@ map.forEach(function(value,key){
   }
 })
 console.log(ans);
+
+
+
+//guess output
+
+console.log("start")
+
+setTimeout(()=>{
+  console.log("first");
+},0);
+Promise.resolve("second").then((res)=>{
+console.log(res)
+})
+console.log("end");
+
+//output
+//start
+//end
+//second
+//first
+
