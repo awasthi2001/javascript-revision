@@ -58,3 +58,30 @@ for eg. a function expression can also be used as anonymous function
   /*
    When functions can be treated like any other variable then those functions are called first class functionss
   */
+
+
+  //What is pure function ?
+  /*Ans. A pure function is a function (a block of code) that always returns a same results if the same arguments are passed . It does not
+         depend on any state or data change during the execution . Rather it only depends on its input arguments.
+
+         Also a pure function does not produce any side effects such as network requests or data mutations etc.
+  */       
+
+         //For example :-
+
+         function CalculateMultiply(a,b){
+            return a*b;
+         }
+
+         console.log(CalculateMultiply(7,4))
+/*
+The below example is not a pure function because it also depend on the outer variable
+*/
+
+         let d  = 20;
+
+         function Calculate(b){
+          return d*b;
+         }
+
+
