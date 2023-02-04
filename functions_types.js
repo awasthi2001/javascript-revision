@@ -76,6 +76,17 @@ for eg. a function expression can also be used as anonymous function
          console.log(CalculateMultiply(7,4))
 /*
 The below example is not a pure function because it also depend on the outer variable
+Note: If a pure function calls a pure function, this isn’t a side effect and the calling function is still considered pure. 
+(Example: using Math.max() inside a function)
+
+Below are some side effects (but not limited to) that a function should not produce in order to be considered a pure function –
+
+Making an HTTP request
+Mutating data
+Printing to a screen or console
+DOM Query/Manipulation
+Math.random()
+Getting the current time
 */
 
          let d  = 20;
