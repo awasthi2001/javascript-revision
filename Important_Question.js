@@ -87,7 +87,6 @@ console.log(ans);
 //guess output
 
 console.log("start")
-
 setTimeout(()=>{
   console.log("first");
 },0);
