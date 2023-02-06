@@ -111,3 +111,15 @@ const obj2 = {name : "akshansh"};
  //return true if the values are the same,false otherwise (Working of Object.is() property) introduced in ES6 
 console.log(Object.is(num1,num2));//output - false  because both are num1 is a number and num2 is a string
 console.log(Object.is(obj1,obj2));//output - false because both are different objects
+
+
+
+//guess the output
+
+const players = ["ak",{name:"ak"},"Ck"];
+
+//indexOf basically returns the index of the element if found else return -1
+const index1 = players.indexOf({name:"ak"}) // it will return -1 because both objects are referenceing to the different memory
+const index2 = players.indexOf("Ck"); // it will return 2
+
+console.log(index1, index2)
