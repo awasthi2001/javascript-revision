@@ -108,6 +108,6 @@ const num2 = "1";
 
 const obj1 = {name : "akshansh"};
 const obj2 = {name : "akshansh"};
- //return true if the values are the same,false otherwise (Working of Object.is() property)
+ //return true if the values are the same,false otherwise (Working of Object.is() property) introduced in ES6 
 console.log(Object.is(num1,num2));//output - false  because both are num1 is a number and num2 is a string
 console.log(Object.is(obj1,obj2));//output - false because both are different objects
