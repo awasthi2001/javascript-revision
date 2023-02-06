@@ -123,3 +123,24 @@ const index1 = players.indexOf({name:"ak"}) // it will return -1 because both ob
 const index2 = players.indexOf("Ck"); // it will return 2
 
 console.log(index1, index2)
+
+
+//write a program to remove duplicates from an array
+
+let array = [1,2,3,4,5,1,3];
+//output : - [1,2,3,4,5]
+
+
+let set = new Set();
+
+for(let i=0; i<array.length; i++){
+  let num = array[i];
+  set.add(num)
+}
+let ans2 =  []
+
+set.forEach((value)=>{
+  ans2.push(value)
+})
+
+console.log(ans2)
