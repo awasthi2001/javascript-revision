@@ -144,3 +144,21 @@ set.forEach((value)=>{
 })
 
 console.log(ans2)
+
+
+
+//Convert the array into a object
+
+const aar = ['a','b','c'];
+
+// 1 way
+let obj = {};
+ for(let i=0; i<aar.length; i++){
+  obj[i] = aar[i];
+ }
+console.log(obj)
+
+//2nd way
+
+let obj_2 = Object.assign({}, aar)
+console.log(obj_2)
