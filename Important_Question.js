@@ -162,3 +162,15 @@ console.log(obj)
 
 let obj_2 = Object.assign({}, aar)
 console.log(obj_2)
+
+
+
+//guess output
+
+let a = null;
+let b = undefined;
+
+console.log('check',a==b); // it will return true because double equals to checks only values so if we check the boolean value of null that is false
+                  // and boolean value of undefined is also false so false==false will return true
+
+console.log('check',a===b);// it will return false because triple equals to check both values and type so, the type of null is object whereas type of undefined is undefined
