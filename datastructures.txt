@@ -1,0 +1,13 @@
+Array :- An array is a collection of elements such that the elements stored in the array at the contiguos memory locations
+
+* Array index starts from 0
+* Array length count starts from 1
+
+Stack :- A stack is a data structure used to store a collection of elements . The element added first in the stack will be removed in the last
+
+
+Queue :- A queue is another linear data structure that stores the elements in a sequential manner.The element added first in the queue will be removed first
+
+
+Linkdlist :- A linkdlist is like a chain of nodes where each node contains information like data and a pointer pointing to the next node
+   Reallife example :- train
