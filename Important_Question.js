@@ -175,7 +175,7 @@ function fun(input1, input2) {
     if (input1[i] == input2[i]) { // i==keys i is the key of the object so if we compare input1['d']==input2['d] if the value is same then only it return true 
        obj[i] = input1[i];
     }
-  }
+  } 
   return obj;
 }
 
