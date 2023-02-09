@@ -192,3 +192,19 @@ arr2.push(4); // [3,2,1,4]
 
 console.log(arr1); //[3,2,1,4]
 console.log(arr2);//[3,2,1,4]
+
+
+
+//guess output
+
+const m_ap = new Map();
+
+m_ap.set("a",1);
+m_ap.set("b",2);
+m_ap.set("c",3);
+m_ap.set("a",7);
+
+console.log("a",m_ap.get("a"));
+console.log("size ",m_ap.size)
+
+// output :- 7 3 because map can't contain duplicate keys ,it will overwrite if we try do it.
