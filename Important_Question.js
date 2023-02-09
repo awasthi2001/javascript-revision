@@ -180,3 +180,15 @@ function fun(input1, input2) {
 }
 
 console.log(fun(input1, input2));
+
+
+//guess output 
+
+const arr1 = [1,2,3];
+const arr2 = arr1.reverse(); //[3,2,1] basically reverse function reverse the array inplace and reference to the same array
+                             //it means arr1 will also change
+
+arr2.push(4); // [3,2,1,4]
+
+console.log(arr1); //[3,2,1,4]
+console.log(arr2);//[3,2,1,4]
