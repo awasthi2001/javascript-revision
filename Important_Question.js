@@ -230,3 +230,18 @@ fruits.forEach((ele)=>{//we are using foreach to iterate over the array
 })
 
 console.log(fruits_count)
+
+
+//guess output
+
+const str = "Akshansh";
+function foo(str){
+  if(str.length<2){
+    return str;
+  }
+  return foo(str.slice(1))+str[0];//here slice will extracts the part of the string and returns extracted string in a new string.
+  //we are calling the same function foo and pass the input except the first character using slice . After that the result will be reversed.
+}
+
+const result = foo(str);
+console.log(result)//hsnahskA
