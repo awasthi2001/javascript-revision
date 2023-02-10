@@ -208,3 +208,25 @@ console.log("a",m_ap.get("a"));
 console.log("size ",m_ap.size)
 
 // output :- 7 3 because map can't contain duplicate keys ,it will overwrite if we try do it.
+
+
+//Question : count the number of each fruit
+
+
+const fruits = [
+  {Apple:4,Orange:7,Grape:3},
+  {Guava:6,Lemon:4,Banana:8},
+  {Orange:5,Pineapple:7,Apple:7}
+]
+let fruits_count = {};
+fruits.forEach((ele)=>{
+  for(let i in ele){
+        if(fruits_count[i]){
+            fruits_count[i]+=ele[i]
+        }else{
+            fruits_count[i] = ele[i]
+        }
+  }
+})
+
+console.log(fruits_count)
