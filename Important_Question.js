@@ -219,8 +219,8 @@ const fruits = [
   {Orange:5,Pineapple:7,Apple:7}
 ]
 let fruits_count = {};
-fruits.forEach((ele)=>{
-  for(let i in ele){
+fruits.forEach((ele)=>{//we are using foreach to iterate over the array
+  for(let i in ele){//we are using for in loop to iterate over the object
         if(fruits_count[i]){
             fruits_count[i]+=ele[i]
         }else{
