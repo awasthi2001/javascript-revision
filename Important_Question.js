@@ -245,3 +245,18 @@ function foo(str){
 
 const result = foo(str);
 console.log(result)//hsnahskA
+
+//guess output
+
+const add = (x)=>x+x;
+function addition(num=2,val=add(num)){ //The concept of default parameters is introduced in ES6 . 
+                                      //This allows us to give default values to the function parameter
+  console.log(num,val);
+}
+//since we are not passing second argument so add function will be called . The result will be 3 6
+addition(3)
+
+//output :- 3 6
+
+
+
