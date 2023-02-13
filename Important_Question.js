@@ -259,4 +259,24 @@ addition(3)
 //output :- 3 6
 
 
+//guess output
+
+const calc = {
+  total : 0,
+  add : function(num){
+    this.total += num;
+    return this;
+  },
+  sub : function(num){
+    this.total -= num;
+    return this;
+  },
+  mul : function(num){
+    this.total *= num;
+    return this;
+  }
+}
+
+console.log(calc.add(10).sub(5).mul(10).total)
+
 
