@@ -287,7 +287,7 @@ const key = "age";
 
 const person = {
   name : "Akshansh",
-  [key] : age
+  [key] : age //However with ES6 , we can directly add the key dynamically using variable.
 }
 
 console.log(person.name);
