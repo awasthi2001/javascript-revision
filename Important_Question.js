@@ -280,3 +280,18 @@ const calc = {
 console.log(calc.add(10).sub(5).mul(10).total)
 
 
+//guess output
+
+const age = 24;
+const key = "age";
+
+const person = {
+  name : "Akshansh",
+  [key] : age
+}
+
+console.log(person.name);
+console.log(person.age)
+
+//The output should be Akshansh 24
+
