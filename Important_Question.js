@@ -311,4 +311,18 @@ function sum(x,y){
 console.log(sum(2,3)) // it will print 5 because y is not equals to undefined so it will go into the if block and return x+y;
 console.log(sum(2)(3))//it will print 5 because it will go to else block and return a new function and we are also calling that function also and it is returning x+y
 
+//guess output
 
+let ss = '20';
+
+switch(ss){
+case '20' : {
+  ss+=20 //here it will be 2020 and because 20 is a string and we are adding another in it 
+//  break;
+}
+case 20 : {
+  ss++
+}
+}
+
+console.log(ss) //2021

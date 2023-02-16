@@ -1,0 +1,9 @@
+MVC :- MODEL VIEW CONTROLLER STRUCTURE
+
+MODEL :- Model reprents the structure of the data . the format and the constraints with which it is stored. It maintains the data of the application.Essentially, It is the database of the application.
+
+VIEW  :- View is what presented to the user . views utilize the model and present data in a form in which the user wants.
+
+
+CONTROLLER  :-Controller controls the requests of the user and then generates appropriate response which is fed to the viewer. Typically, the user interacts with the View, which in turn generates the appropriate request, this request will be handled by a controller. The controller renders the appropriate view with the model data as a response
+               
