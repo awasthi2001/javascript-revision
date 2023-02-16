@@ -1,0 +1,61 @@
+Q1. what is an API ?
+Ans. When someone provides you some functionality which is called API.
+
+Full Form :- APPLICATION PROGRAMMING INTERFACE
+
+Application programming interface are constructs made available in programming langauge to allow developers to create complex functionality more easily. It abstract more complex functionality code away from you . providing some easier syntax to use in its place.
+
+Interface :- point where 2 different computer connects.
+
+
+Definiton :- An application programming interface (API) is a software interface that allows two applications to interact with each other .
+             API is a collection of software functions . In simple terms API means a software code that can be accessed or executed .
+             API is defined as a code that helps two different softwares to communicate and exchange data with each other.
+
+        We can say that API is a technical contract.
+        Contract :- The contract defines how to communicate with each other.      
+
+
+
+
+ REST API :- 
+ Representational State Transfer (REST) is an architectural style that defines a set of constraints to be used for creating web services. REST API is a way of accessing web services in a simple and flexible way without having any processing.
+
+REST technology is generally preferred to the more robust Simple Object Access Protocol (SOAP) technology because REST uses less bandwidth, simple and flexible making it more suitable for internet usage. It’s used to fetch or give some information from a web service. All communication done via REST API uses only HTTP request. 
+
+Working: A request is sent from client to server in the form of a web URL as HTTP GET or POST or PUT or DELETE request. After that, a response comes back from the server in the form of a resource which can be anything like HTML, XML, Image, or JSON. But now JSON is the most popular format being used in Web Services.     
+
+RESTful web services are very popular because they are light weight, highly scalable and maintainable and are very commonly used to create APIs for web-based applications.
+
+Rest Api's are those that follows certain constraints these includes
+
+* Client-server architectue clients get access to the resource from the server using the http protocol.
+* Stateless communication
+
+Example :-
+GET: Request for all Students.
+     Request
+GET:/api/students
+
+POST: Request for Posting/Creating/Inserting Data
+Request
+
+POST:/api/students
+
+{“name”:”Raj”}
+
+PUT or PATCH: Request for Updating Data at id=1
+Request
+
+PUT or PATCH:/api/students/1
+
+{“name”:”Raj”}
+
+DELETE: Request for Deleting Data of id=1
+     Request
+DELETE:/api/students/1
+
+
+
+
+

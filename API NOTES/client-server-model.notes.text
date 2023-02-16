@@ -1,0 +1,11 @@
+CLIENT-SERVER-MODEL :- The client-server model is a distributed application structure that partitions task or workload between the provider of a 
+                       resource called server. and service requesters called client. In the client-server model when the client sends a request
+                       for data to the server through the internet the server accepts the requested process and deliver the data packets requested
+                       back to the client . clients do not share any of their resources.
+
+CLIENT :- When we talk the word client. it mean to talk of a person or an organization using a particular service. Similarly in the digital world
+          a client is a computer (HOST) . capable of receving information or using a particular srevice from the service providers(server).
+
+
+SERVER :- Similarly when we talk the word server. It means a person or medium that serves something . Similarly int the digital world a server 
+          computer which provides information (data) or access to the particular service.                                 
