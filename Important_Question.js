@@ -295,3 +295,20 @@ console.log(person.age)
 
 //The output should be Akshansh 24
 
+
+//guess output
+
+function sum(x,y){
+  if(y!==undefined){
+   return x+y;   
+  }else{
+    return function(y){
+      return x+y;
+    }
+  }
+}
+
+console.log(sum(2,3)) // it will print 5 because y is not equals to undefined so it will go into the if block and return x+y;
+console.log(sum(2)(3))//it will print 5 because it will go to else block and return a new function and we are also calling that function also and it is returning x+y
+
+
