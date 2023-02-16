@@ -21,3 +21,6 @@ What is higher order function ?
 Ans. A higher order function are the functions that take other functions as arguments or return functions as their result
 
 */
+
+//Recursion is a technique to iterate over an operation by having a function call itself until it reaches a result.
+//meaning of recursion :- The problem defined in terms of itself.

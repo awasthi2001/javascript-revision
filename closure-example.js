@@ -171,3 +171,43 @@ So when creating many closures more memory is accumulated .
 
 Garbage Collector:- Program in javascript engine or browser thats free up unused memory.
 */
+
+// function r(){
+
+//     for(var i=1; i<=5; i++){
+//         function close(i){
+//         setTimeout(()=>{
+//           console.log(i)
+//         },i*1000)
+//         }
+//         close(i)
+//     }
+// }
+
+// r()
+
+
+
+//cuur
+
+let multiply8 = function(x){
+    return function(y){
+        console.log(x*y)
+    }
+}
+
+
+let multiply9 =  multiply8(9);
+multiply9(4)//36
+
+function increment(){
+    
+var c = 0;
+ return function(){
+    c++;
+    console.log(c)
+ } 
+
+}
+
+
