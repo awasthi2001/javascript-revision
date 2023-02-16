@@ -333,7 +333,7 @@ console.log(ss) //2021
 
 var res;
 for(var r=5; r>0;r--){
-   res = res+r  //here result is uninitialised so the value of the variable res remains undefined as we know , undefined isn't converted into
+   res = res+r  //here result is uninitialised so the value of the  variable res remains undefined as we know , undefined isn't converted into
                 // any number so using it in math calculations returns NaN
 }
 
