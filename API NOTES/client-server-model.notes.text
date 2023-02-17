@@ -21,3 +21,14 @@ DNS :- dns server is a registry of domain name mapped with their IP address.
 4). Browser sends over an Http requests to the web server.
 
 5). server sends over the necessary files of the website.
+
+
+
+Q2. What is a stateless server ?
+Ans. As the name suggests, the stateless server has no state with regard to the users information . It means when the user access any web resource,
+     the server does not keep a track of the user identity or actions performed on the page . So every time , the user has to prove the identity to gain access.
+     Basically The user does not need credentials everytime during the valid session.
+
+     How does stateless server works ?
+     users visits a webpage and the client-side interface on detecting a user responds with a credential window. The user gives a username and a password and submits it for for authentication . The server verifies the credentials from database and give access to the user . The server
+     gives a unique token to verify the identity . The user on next request can use the token to gain entry into the resource. This eliminates the need for the server to store information.
