@@ -338,3 +338,21 @@ for(var r=5; r>0;r--){
 }
 
 console.log(res) //NaN
+
+
+
+//guess output 
+
+const arr5 = [{key:1},{key:1},{key:2}]
+const result2 = [];
+
+const map2 = new Map()
+
+for(let item of arr){
+  if(!map.has(item.key)){
+    result.push(item); 
+    map.set(item.key,item);
+  }
+}
+console.log(result2);
+////[{key:1},{key:2}]-correct answer
