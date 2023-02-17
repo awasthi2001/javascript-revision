@@ -32,3 +32,10 @@ Ans. As the name suggests, the stateless server has no state with regard to the 
      How does stateless server works ?
      users visits a webpage and the client-side interface on detecting a user responds with a credential window. The user gives a username and a password and submits it for for authentication . The server verifies the credentials from database and give access to the user . The server
      gives a unique token to verify the identity . The user on next request can use the token to gain entry into the resource. This eliminates the need for the server to store information.
+
+
+
+
+                                                          THROUGHPUT VS LATENCY
+
+             
