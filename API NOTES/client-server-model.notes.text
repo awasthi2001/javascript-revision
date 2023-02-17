@@ -9,3 +9,15 @@ CLIENT :- When we talk the word client. it mean to talk of a person or an organi
 
 SERVER :- Similarly when we talk the word server. It means a person or medium that serves something . Similarly int the digital world a server 
           computer which provides information (data) or access to the particular service.                                 
+
+ So, its basically the client requesting something and the server serving the data.
+
+WORKING :- 
+
+1). Users enters the URL (Uniform resource locator) of the website or file . The Browser then requests the DNS(Domain Name System) server.
+2). Dns server will lookup for the address of web server
+DNS :- dns server is a registry of domain name mapped with their IP address.
+3). DNS server responds with the IP address of the web server.
+4). Browser sends over an Http requests to the web server.
+
+5). server sends over the necessary files of the website.
