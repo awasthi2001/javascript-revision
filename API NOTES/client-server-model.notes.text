@@ -38,4 +38,22 @@ Ans. As the name suggests, the stateless server has no state with regard to the 
 
                                                           THROUGHPUT VS LATENCY
 
-             
+        If throughput were a drinking straw in a glass of orange juice . latency is how much time it takes for the juice to get from the cup to 
+        your mouth through that straw. It's basically a metric of delay. how long do you have to wait before enjoying the juice.
+
+        In others words , throughput is the number of data packets being successfully sent per second and latency is the actual time those packets
+        are taking to get there . So, the terms are related . they both relate data transfer and speed. you want to maximize the throughput but
+        minimize latency.
+
+
+
+                                                                       TOKEN 
+
+            A token can be defined as a digitally encoded signature used to authenticate and authorize a user to access specific resource on
+            a network.
+
+            A token based authentication allows users to verify their unique identity and in return they receive a unique token 
+            token that provides access to certain resources for a particular time frame.
+
+            Apart from this users can easily access the website or network for which the token is issued and need not enter the credentials again and
+            again until token expires.                                        
