@@ -350,9 +350,21 @@ const map2 = new Map()
 
 for(let item of arr){
   if(!map.has(item.key)){
-    result.push(item); 
+    result2.push(item); 
     map.set(item.key,item);
   }
 }
 console.log(result2);
 ////[{key:1},{key:2}]-correct answer
+
+
+
+
+//guess output
+
+let str1 = "hello";
+str1[1] = "a";
+
+let arr9 = ["h","e","l","l","o"];
+arr9[1] = "a"
+console.log(arr9,str1)//[h,a,l,l,o], hello
