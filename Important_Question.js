@@ -235,7 +235,7 @@ console.log(fruits_count)
 //guess output
 
 const str = "Akshansh";
-function foo(str){
+function foo(str){ 
   if(str.length<2){
     return str;
   }
