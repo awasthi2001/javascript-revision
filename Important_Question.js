@@ -368,3 +368,13 @@ str1[1] = "a";
 let arr9 = ["h","e","l","l","o"];
 arr9[1] = "a"
 console.log(arr9,str1)//[h,a,l,l,o], hello
+
+
+//guess output
+
+var y =  (function(x){
+  delete x;
+  return x;
+})(0)
+
+console.log('y',y)
