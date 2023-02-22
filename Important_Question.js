@@ -7,7 +7,7 @@ function calculatesum(num) {
       // we are doing this because we want a number of only one digit if the sum>9 || num>0 then we do num==sum and sum = 0
       num = sum;
       sum = 0;
-    }
+    } 
     let rem = num % 10;
     sum += rem;
     num = Math.floor(num / 10);
