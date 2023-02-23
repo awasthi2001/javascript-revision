@@ -11,6 +11,10 @@ Model is data part.
 View is User Interface part.
 Controller is request-response handler.
 
+3way handshake
 
+first the client expresses the intent to the server
+second server acknowledge the intent 
+third client will tell what actually needs
                          
                
