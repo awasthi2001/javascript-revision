@@ -1,7 +1,7 @@
 // function x(){
 //     let z = 10;
 //     function y(){
-//         console.log(z);
+//         console.log(z); 
 //     }
 //     return y;
 // }
