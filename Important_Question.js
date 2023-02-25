@@ -378,3 +378,14 @@ var y =  (function(x){
 })(0)
 
 console.log('y',y) 
+
+
+//guess output
+
+
+var str4 = true;
+
+console.log(str4+0);//1+0 => 1
+console.log(str4+"xyz")//truexyz => true+"xyz" => truexyz
+console.log(str4+true);//2 => true+true = 1+1 =>2
+console.log(str4+false);//1+0 =>1
