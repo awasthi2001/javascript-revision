@@ -381,11 +381,22 @@ console.log('y',y)
 
 
 //guess output
+/*
+we can use following conversion rules to see how JS converts types in addition operation
 
+operand + operand = result
+
+a). if at least one operand is an object , it is converted to a primitive value (string,number or boolean
+b). After conversion if at least one operand is string type the second operand is converted to string and the concatenation is executed.
+c). In other case both operands are converted to numbers and arithmetic addition is executed.
+d). If both operands are primitive types then operator checks if atleast one is string and executes the concatenation
+e). when the + operator is placed between two booleans the booleans are converted to numbers .
+*/
 
 var str4 = true;
 
-console.log(str4+0);//1+0 => 1
-console.log(str4+"xyz")//truexyz => true+"xyz" => truexyz
-console.log(str4+true);//2 => true+true = 1+1 =>2
-console.log(str4+false);//1+0 =>1
+console.log(str4+0);//1+0 => 1 //rule c
+console.log(str4+"xyz")//truexyz => true+"xyz" => truexyz //rule b
+console.log(str4+true);//2 => true+true = 1+1 =>2 => rule e
+console.log(str4+false);//1+0 =>1 // rule e
+
