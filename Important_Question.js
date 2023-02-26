@@ -396,7 +396,7 @@ e). when the + operator is placed between two booleans the booleans are converte
 var str4 = true;
 
 console.log(str4+0);//1+0 => 1 //rule c
-console.log(str4+"xyz")//truexyz => true+"xyz" => truexyz //rule b
+console.log(str4+"xyz")//truexyz => true+"xyz" => truexyz //rule  
 console.log(str4+true);//2 => true+true = 1+1 =>2 => rule e
 console.log(str4+false);//1+0 =>1 // rule e
 
