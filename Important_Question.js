@@ -407,3 +407,28 @@ console.log(str4+false);//1+0 =>1 // rule e
 const calc2 = eval("10*10+5") //this is function which takes valid javascript code as string and evaluates it.
 
 console.log("calc2", calc2)//105
+
+
+
+//find domain name from website
+
+let url = "www.akshansh.co.in";
+
+let first_dot = 0;
+let second_dot = 0;
+
+for(let i=0; i<url.length; i++){
+  if(url[i]==="."){
+    first_dot = i;
+    break;
+  }
+}
+
+for(let i=first_dot+1; i<url.length; i++){
+  if(url[i]==="."){
+    second_dot = i;
+    break;
+  }
+}
+
+console.log(url.substring(first_dot+1,second_dot));
