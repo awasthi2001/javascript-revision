@@ -400,3 +400,10 @@ console.log(str4+"xyz")//truexyz => true+"xyz" => truexyz //rule
 console.log(str4+true);//2 => true+true = 1+1 =>2 => rule e
 console.log(str4+false);//1+0 =>1 // rule e
 
+
+
+//guess output
+
+const calc2 = eval("10*10+5") //this is function which takes valid javascript code as string and evaluates it.
+
+console.log("calc2", calc2)//105
