@@ -432,3 +432,15 @@ for(let i=first_dot+1; i<url.length; i++){
 }
 
 console.log(url.substring(first_dot+1,second_dot));
+
+
+//guess output
+
+const user = {
+  fname : "Akshansh",
+  lname : "Awasthi",
+  email : null
+}
+
+let res2 = Object.values(user).every((val)=>val);
+console.log("res",res2)//false this will return false since email is null.
