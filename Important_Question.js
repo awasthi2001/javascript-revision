@@ -444,3 +444,17 @@ const user = {
 
 let res2 = Object.values(user).every((val)=>val);
 console.log("res",res2)//false this will return false since email is null.
+
+
+//guess output
+
+function getNumber(){
+  return 2,4,5;
+}
+
+console.log(getNumber())//In javascript returning single values from a function can be acheived by calling the function . But what if the function
+//has multiple values what will it return ?
+//We cannot return multiple values at the same time . The reason for this is that we are returning values using the return statement.
+//This statement can handle only one value at a time.
+//here we are returning values using commas like this , only the last value is actually returned.
+//Therefore the output of the code will be 5.
