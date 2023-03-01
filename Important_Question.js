@@ -458,3 +458,11 @@ console.log(getNumber())//In javascript returning single values from a function 
 //This statement can handle only one value at a time.
 //here we are returning values using commas like this , only the last value is actually returned.
 //Therefore the output of the code will be 5.
+
+
+//guess output
+
+let t = "Hello";
+t.length = 3;
+
+console.log(t.length) // Answer will be 5 because the total length is 5 and x.length=3 has no effect on the code So it will print 5
