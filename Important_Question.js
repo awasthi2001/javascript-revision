@@ -466,3 +466,23 @@ let t = "Hello";
 t.length = 3;
 
 console.log(t.length) // Answer will be 5 because the total length is 5 and x.length=3 has no effect on the code So it will print 5
+
+
+
+//guess output
+
+let u = "Hello World!";
+let v = "string";
+
+console.log(v===typeof u)//Operator typeof return the type of variable . In this case the typeof u is string and here string === string 
+// so it will print true here
+
+
+//guess output
+
+const print = console.log;
+
+print("hello world!");//it creates a variable called "print" and sets it to a function  called "console.log" . This funtion is used to print
+//messages to the console in javascript .
+//Then it calls the print function with the arguments hello world . This causes the message "Hello world!" to be printed to the console.
+//so in simple terms it is just a way to print a message to the console in javascript .
