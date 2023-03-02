@@ -483,6 +483,6 @@ console.log(v===typeof u)//Operator typeof return the type of variable . In this
 const print = console.log;
 
 print("hello world!");//it creates a variable called "print" and sets it to a function  called "console.log" . This funtion is used to print
-//messages to the console in javascript .
+//messages to the console in javascript . 
 //Then it calls the print function with the arguments hello world . This causes the message "Hello world!" to be printed to the console.
 //so in simple terms it is just a way to print a message to the console in javascript .
