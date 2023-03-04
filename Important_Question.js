@@ -486,3 +486,19 @@ print("hello world!");//it creates a variable called "print" and sets it to a fu
 //messages to the console in javascript . 
 //Then it calls the print function with the arguments hello world . This causes the message "Hello world!" to be printed to the console.
 //so in simple terms it is just a way to print a message to the console in javascript .
+
+
+
+let n = 24;
+let l = 0, r = 100, ans5 = n;
+while(l <= r) {
+   let mid = Math.floor((l + r) / 2);
+   if(mid * mid <= n) {
+       ans5 = mid;
+       l = mid + 1;
+   }
+   else {
+       r = mid - 1;
+   }
+}
+print(ans5);
