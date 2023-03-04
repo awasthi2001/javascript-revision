@@ -489,16 +489,66 @@ print("hello world!");//it creates a variable called "print" and sets it to a fu
 
 
 
-let n = 24;
-let l = 0, r = 100, ans5 = n;
-while(l <= r) {
-   let mid = Math.floor((l + r) / 2);
-   if(mid * mid <= n) {
-       ans5 = mid;
-       l = mid + 1;
-   }
-   else {
-       r = mid - 1;
-   }
-}
-print(ans5);
+// let n = 24;
+// let l = 0, r = 100, ans5 = n;
+// while(l <= r) {
+//    let mid = Math.floor((l + r) / 2);
+//    if(mid * mid <= n) {
+//        ans5 = mid;
+//        l = mid + 1;
+//    }
+//    else {
+//        r = mid - 1;
+//    }
+// }
+// print(ans5);
+
+
+//guess output
+
+let {log} = console;
+
+log("Hello world 8")
+
+//guess output
+
+const numbers = [1,2,3];
+numbers.push(4); //[1,2,3,4]
+numbers.pop();//[1,2,3]
+numbers.push(4);//[1,2,3,4]
+
+console.log(numbers.length); //4
+
+
+//guess output
+
+let x8 = '10';
+let y8 = 20;
+
+console.log(x8+y8) //1020
+
+
+
+//guess output
+
+const a8 = [1,2,3];
+const b8 = [4,5,6];
+
+const c8 = b8.concat(a8)//Combines two or more arrays. This method returns a new array without modifying any existing arrays.
+
+console.log(c8)
+
+
+//guess output
+
+let x9 = 5;
+console.log((x9=6))//6
+
+
+//guess output
+
+let count = 5;
+count += ++count; //5+6
+
+console.log(count);//11
+
