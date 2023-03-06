@@ -552,3 +552,9 @@ count += ++count; //5+6
 
 console.log(count);//11
 
+//guess output
+
+let x = "one";
+console.log(Number(x)); // NaN because x is a string so we can not convert it to a number
+
+
