@@ -558,3 +558,39 @@ let x = "one";
 console.log(Number(x)); // NaN because x is a string so we can not convert it to a number
 
 
+//guess output
+
+const numbers9 = [1,2,3,4,5]
+const [p] = numbers9;
+console.log(p)// 1 because of array destructuring
+
+
+//guess output
+
+let players2 = [
+  {name : "vk",role:"Batsman"},
+  {name : "hp",role:"All-Rounder"},
+  {name : "rj",role : "All-Rounder"}
+] 
+/*
+Javascript every method . It's useful when checking if every element matches a certain criteria . The some method differs in that it checks if only 'some' elements
+pass a criteria.
+some works like a loop - it loops over every elements and checks if the callback function you gave returns you gave returns true for any of them.
+it will check there is a first player vk whose role is "Batsman" it is fulfulling the condition so.some() method will stop and return a true value;
+*/
+
+
+
+let result9 = players2.some((players)=>{ 
+  return players.role==="Batsman";
+})
+console.log(result9)
+
+
+
+
+//guess output
+
+let o = [1,2,3,4,5];
+let q = o.filter((e)=>e%2===0);
+console.log(q)
