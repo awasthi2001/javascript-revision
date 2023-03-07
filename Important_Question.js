@@ -594,3 +594,9 @@ console.log(result9)
 let o = [1,2,3,4,5];
 let q = o.filter((e)=>e%2===0);
 console.log(q)
+
+
+//guess output
+
+let x7 = [1,2,3]
+console.log(x7.concat(4,5))
