@@ -57,3 +57,15 @@ Ans. As the name suggests, the stateless server has no state with regard to the 
 
             Apart from this users can easily access the website or network for which the token is issued and need not enter the credentials again and
             again until token expires.                                        
+
+
+
+                                                              ROLE BASED AUTHENTICATION
+
+
+               Only the administrator should have complete access to the network while the othrer employees like junior engineers need not full access to the network device. A junior level engineer
+               generally requires only to crosscheck the configuration of the device , not to add or delete any configuration so why should give full access to that employee ?
+
+
+               The concept of Role based access control is to create a set of permissions and assign these permissions to a user or group .
+               With the help of these permissions , only limited access to users can be provided therefore level of security is increased.
