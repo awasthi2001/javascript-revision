@@ -65,7 +65,19 @@ Ans. As the name suggests, the stateless server has no state with regard to the 
 
                Only the administrator should have complete access to the network while the othrer employees like junior engineers need not full access to the network device. A junior level engineer
                generally requires only to crosscheck the configuration of the device , not to add or delete any configuration so why should give full access to that employee ?
+            For example :- I am creating a Blog website every user can see all the blogs and but no user can delete 
+                         or update other users blogs. only the user can delete and update his blogs.
 
 
                The concept of Role based access control is to create a set of permissions and assign these permissions to a user or group .
                With the help of these permissions , only limited access to users can be provided therefore level of security is increased.
+
+
+
+
+
+                                                               OPERATING System
+ 
+                An operating system (OS) is an interface between a user and computer hardware . An operating system is a software which performs all the basic tasks like file management, memory management , process management, handling input and output and controlling peripheral devices such as disk drives and printers.
+
+                An operating system is software that enables applications to interact with a computer's hardware . The software that contains the core components of the operating system is called the kernel.                                     
