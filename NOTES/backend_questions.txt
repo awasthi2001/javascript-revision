@@ -46,3 +46,27 @@
   }
   var cube_of_two = cube(2)
   console.log(cube_of_two);
+
+ 
+
+                                 WHAT IS JWT ?
+
+     JWT STANDS FOR JSON WEB TOKEN  
+    A json web token is json object which is used to securely transfer informaton over the web . It can be used for an authentication system and can also be used for information exchange.
+
+   jwt consists of three main parts seperated by Dots(.)
+
+  which are :- headers,payload and signature.
+
+  1). Headers :- The header typically consists of two parts the type of the token . which is jwt and signing algorithm being used.
+
+       {
+         "alg" : "HS256",
+         "type" : "jwt",
+       }
+
+  2). Payload :-  The payload is the part of the JWT where all the user data actually added . 
+
+
+  3). To create the signature part we need to take the encoded header the encoded payload and a secret key .
+  
