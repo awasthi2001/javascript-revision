@@ -600,3 +600,23 @@ console.log(q)
 
 let x7 = [1,2,3]
 console.log(x7.concat(4,5))
+
+
+const sum5 =(x,y)=>x+y;
+console.log(sum5(4,9))
+
+// console.log(name2)
+
+// name2 = 'masai'
+// console.log(name2)
+// var name2 
+
+function alpha(){
+  var name = 'masai';
+  console.log(this.name)
+}
+
+
+var name = 'masai_school'
+
+alpha();

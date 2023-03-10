@@ -1,0 +1,48 @@
+                                    NODE JS
+
+
+       Node.js is a javascript runtime enviroment for executing javascript code outside a browser. Node js is not a framework and it's not a programming language.
+
+       Node js is a virtual machine that uses javascript as its scripting language and runs chrome v8 engine .   
+     
+
+
+
+                                 AUTHENTICATION
+
+        iT IS JUST A WAY OF IDENTIFYING WHO SOMEONE IS ? =>IDENTIFICAION
+    EX:- WITHOUT AUTHENTICATION I CAN'T BUY A PRODUCT ON AMAZON.
+
+     MOST COMMON AUTHENTICATION :- * SIGNUP/REGISTER/CREATE ACCOUNT
+                                   * LOGIN
+       If email and password is correct only then LOGIN
+       we have to match it with the data that in the database.
+
+       authentication is the process of verifying the identity of a user or information .
+        User authentication is the process of verifying the identity of a user when that user login in to a system.
+                                                             
+
+                                How JS engine works ?    
+
+                                
+          Whenever we create anything in javascript , an exection global exection context is created.
+
+          ### The execution context is created with two phases :-
+          1.Memory Creation Phase :- In this phase javascript assigns allocates a memory to a variable and functions as a key value pair.
+
+          before even a single line of code run.
+          So in case of variable it allocates a special  placeholder called undefined.
+          And in case of function it allocates a whole code.
+          But in case of arrow function and function expressions it allocates
+          undefined only . because it act as a variable only.
+
+          2.Code Execution Phase :- In this phase javaslcript runs code line by line.
+
+  Lets look at the example below 
+  var n = 2;
+  function cube(num){
+    var ans = num*num*num;
+    return ans;
+  }
+  var cube_of_two = cube(2)
+  console.log(cube_of_two);
