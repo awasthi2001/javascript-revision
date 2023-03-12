@@ -70,3 +70,12 @@
 
   3). To create the signature part we need to take the encoded header the encoded payload and a secret key .
   
+
+
+
+
+                               WHAT IS MIIDLEWARE ?
+
+
+
+            MIDDLEWARE IS THE FUNCTION WHICH HAVE ACCESS TO THE REQUEST OBJECT , RESPONSE OBJECT AND THE NEXT FUNCTION IN REQUEST RESPONSE CYCLE                                             
