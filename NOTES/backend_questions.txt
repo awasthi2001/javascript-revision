@@ -96,4 +96,38 @@
                                WHAT IS DATABASE ?
 
        The database is nothing but a place where we store the data . It is mostly a dedicated place that handles all types of crud operations on the data.
-       There are multiple types of databases every one of them only differs "How " they store data . ultimate goal for every databases is same store the data and get data as effectively as possible.                        
+       There are multiple types of databases every one of them only differs "How " they store data . ultimate goal for every databases is same store the data and get data as effectively as possible.
+
+
+       There are two types of databases
+
+       (1). Relational Database :-  These type of database are the most common ones so far . They are one of the oldest database System as well . A Relational database stores the data in the row and column format.
+  
+  
+
+       id     name    age
+       1      john     33
+       2      hack     50
+
+       here id name age is the column and every row represents the data stored in the database . we call these types of databases Relational . because you can represent the data in terms of relations to the other data.'
+                                     OR
+       Each table has a special column that contains only distinct and unique values that are called primary key.    
+       The primary key is used to define the relationship between the tables and if the 1st table(student) primary key ID is used in the 2nd table(College Student), then that column is called foreign key(Student ID) . So, ID is the primary key for student table.                          
+
+       (2) Non-Relational :-  These are just opposite of SQL database which is why its common to call them "no-sql".
+
+       In Nosql databases the data stored in DB has no relation with other data.In simple word you can store whatever you want without worrying about any structured.
+
+
+                                                              WHAT IS DNS AND WHERE IT IS USED ?
+
+               First of all whenever we want to open any website then first we open web browser after that we will type URL of that website .then url is now sent to the Domain name server . The DNS first check records of this URL in their database . the DNS
+               will return IP address to web browser and now web browser is able to sent request to actual server.
+
+
+               So , dns is a registry of domain name mapped with their ip addresses . After converting to their IP address.now our request will go to the actual server
+               and server understand the request then it will respond.
+
+             
+
+               
