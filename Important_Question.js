@@ -620,3 +620,34 @@ function alpha(){
 var name = 'masai_school'
 
 alpha();
+
+
+
+//guess output
+
+const str5 = "Javascript-with-ak"
+const res6 = str5.startsWith("Java");//true
+/*
+Startswith Method :- Returns true if the sequence of elements of searchString converted to a String is the same as the corresponding elements of this object (converted to a String) starting at position. Otherwise returns false.
+
+*/
+const res7 = str5.startsWith("java");//false
+
+console.log(res6,res7)
+
+//guess output
+
+let x2 = 6;
+let y2 = typeof (x==6);
+console.log(y2) //it should return boolean.
+
+
+let x3 = [1,2,3];
+let y3 = x3.slice();
+console.log(y3,x3==y3) // [1,2,3] , false
+
+function x4(){
+  return {y:"z"};
+}
+console.log(typeof x4().y); //string
+

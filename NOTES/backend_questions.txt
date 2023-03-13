@@ -91,3 +91,9 @@
                 })
               }
              }                                            
+
+
+                               WHAT IS DATABASE ?
+
+       The database is nothing but a place where we store the data . It is mostly a dedicated place that handles all types of crud operations on the data.
+       There are multiple types of databases every one of them only differs "How " they store data . ultimate goal for every databases is same store the data and get data as effectively as possible.                        
