@@ -78,4 +78,16 @@
 
 
 
-            MIDDLEWARE IS THE FUNCTION WHICH HAVE ACCESS TO THE REQUEST OBJECT , RESPONSE OBJECT AND THE NEXT FUNCTION IN REQUEST RESPONSE CYCLE                                             
+            MIDDLEWARE IS THE FUNCTION WHICH HAVE ACCESS TO THE REQUEST OBJECT , RESPONSE OBJECT AND THE NEXT FUNCTION IN REQUEST RESPONSE CYCLE 
+            For Example :- we are sending some data from client  and  we need to check that that data which is required is valid or not so we will make one validation middleware which will check for us and if data is missing it send the RESPONSE that please provide all the required data.
+
+             function validation(req,res,next){
+              let{name,age,email} = req.body;
+              if(name && age && email){
+                next();
+              }else{
+                res.status(400).send({
+                  message : "please send all the required data"
+                })
+              }
+             }                                            
