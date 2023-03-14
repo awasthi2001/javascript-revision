@@ -675,3 +675,28 @@ let names = ["akshansh","ankit","adarsh","akash"]
 //print the length of all the names
 
 console.log(names.map(name=>name.length));
+
+
+
+//guess output
+
+let qz = 7;
+let qy = (typeof qz).length; // explanation typeof qz is number and then we are apply length propery on 'number' so the length this is 6;
+console.log(qy)//6
+
+
+//push all 0's to the last
+
+let arq = [0,1,0,4,0,4];
+let idx = 0;
+for(let i=0; i<arq.length; i++){
+  if(arq[i]!==0){
+    arq[idx++] = arq[i];
+  }
+}
+
+while(idx<arq.length){
+   arq[idx++]= 0;
+}
+
+console.log(arq)
