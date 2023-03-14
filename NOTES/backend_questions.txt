@@ -119,7 +119,7 @@
        In Nosql databases the data stored in DB has no relation with other data.In simple word you can store whatever you want without worrying about any structured.
 
 
-                                                              WHAT IS DNS AND WHERE IT IS USED ?
+                                                                  WHAT IS DNS AND WHERE IT IS USED ?
 
                First of all whenever we want to open any website then first we open web browser after that we will type URL of that website .then url is now sent to the Domain name server . The DNS first check records of this URL in their database . the DNS
                will return IP address to web browser and now web browser is able to sent request to actual server.
@@ -129,5 +129,5 @@
                and server understand the request then it will respond.
 
              
-
-               
+              
+                                                                 

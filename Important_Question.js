@@ -651,3 +651,27 @@ function x4(){
 }
 console.log(typeof x4().y); //string
 
+ 
+/*lambda function :- A lambda expression is a code you enter to define a short function . A lambda function is mostly present in modern languages , It's just an expression that creates a function.
+
+At runtime the expression is evaluated as a lambda function in memory. 
+A lambda function is a short and anonymous function that takes one or more parameters and contains a single expression.
+
+
+  
+
+*/
+
+//For example : - 
+
+let multiply = (a,b)=>{
+  return a*b;
+}
+console.log(multiply(4,5));
+
+
+let names = ["akshansh","ankit","adarsh","akash"]
+
+//print the length of all the names
+
+console.log(names.map(name=>name.length));
