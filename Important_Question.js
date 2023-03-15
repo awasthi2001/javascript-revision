@@ -700,3 +700,10 @@ while(idx<arq.length){
 }
 
 console.log(arq)
+
+
+//guess output
+
+let af = 10;
+let bf = (af,af+10);
+console.log(bf);//it will print 20
