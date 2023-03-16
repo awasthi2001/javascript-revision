@@ -24,7 +24,7 @@ style="border:0"
 loading="lazy"
 allowfullscreen
 referrerpolicy="no-referrer-when-downgrade"
-src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCxKnDi3Xq1MqVTRqTdCUJ3NVC_NYekPPc
+src="https://www.google.com/maps/embed/v1/place?key=
   &q=${search.value ? search.value : val}">
 </iframe>`;
   mapContainer.innerHTML = frame;
