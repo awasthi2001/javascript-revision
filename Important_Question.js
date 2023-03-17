@@ -707,3 +707,22 @@ console.log(arq)
 let af = 10;
 let bf = (af,af+10);
 console.log(bf);//it will print 20
+
+
+//guess output
+
+console.log(undefined==null)//it will print true beacuse both are falsy value
+console.log(undefined===null)//it will print false because these are strict checking
+console.log(NaN==NaN) //it will print false
+
+
+var obj4 = {1:'VALUE'}
+console.log(obj4[1])
+
+
+var ree =  {name:'akshansh',age:'24',address:{ward:'1'}}
+var ree2 = Object.assign({},ree);//Object.assign is also used to make a shadow copy of the object if we try to change the deeper properties
+//it will change the original also
+ree2.name = 'adarsh'
+ree2.address.ward = '2'
+console.log(ree2.address.ward,ree.address.ward)
