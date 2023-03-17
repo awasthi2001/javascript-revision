@@ -56,9 +56,41 @@ getRootList([1,9,4,16,36,25],(roots)=>{
     console.log(roots)
 })
 
-function ans(x){
-    return x*x - 1;
+// function ans(x){
+//     return x*x - 1;
+// }
+
+// let a = ans(ans(ans(ans(3))))
+// console.log(a)
+
+
+function sleep(time){
+
+    return new Promise(function(resolve, reject){
+        if(typeof time!=='number'){
+            reject('please enter a number')
+        }
+        setTimeout(()=>{
+          resolve('done');
+        },time)
+    })
 }
 
-let a = ans(ans(ans(ans(3))))
-console.log(a)
+//sleep(2000).then(res=>console.log(res)).catch(rej=>console.log(rej))
+
+async function test(){
+    try {
+        console.log('waiting for results...');
+        let res = await sleep(2000);
+        console.log(res)
+        if(res=='done'){
+            return true
+        }
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+// test().then((Res)=>{
+//     console.log(Res)
+// })
