@@ -726,3 +726,44 @@ var ree2 = Object.assign({},ree);//Object.assign is also used to make a shadow c
 ree2.name = 'adarsh'
 ree2.address.ward = '2'
 console.log(ree2.address.ward,ree.address.ward)
+
+
+
+//call apply bind
+
+let mydetails = {
+  name : 'Akshansh Awasthi',
+  age : '24',
+  city : 'bijawar',
+  district : 'chhatarpur'
+}
+
+
+function printAllDetails(){
+  console.log(this.name,this.age,this.city,this.district);
+}
+
+
+//printAllDetails.call(mydetails)
+
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+let student1 = {
+  name : "Akshansh Awasthi",
+  age : 21,
+  ward : 1
+}
+let student2 = {
+  name : "Ankit Awasthi",
+  age : 32,
+  ward : 1
+}
+function intro(){
+  console.log(`my name is ${this.name} and my age is ${this.age} and ward number is ${this.ward}`)
+}
+
+let fun = intro.bind(student2)
+fun()
+
+//This method returns a new function where the value of "this" keyword will be bound to the owner object which is provided as a parameter

@@ -6,3 +6,35 @@ What is Virtual Dom ?
 Ans. React uses virtual DOM exists which is like a lightweight copy of the actual dom(a virtual reprentation of the dom). So for every object that exists in the original DOM , there is an object for that in React Virtual DOM . It is exactly the same , but it does not have the power to directly change the layout of the document. Manipulating the layout dom is slow , but Manipulating virtual dom is fast as nothing gets drawn on the screen . So each time there is a change in the state of our application , the virtual dom gets updated first instead of the real dom .
 
 HOW virtual dom actually make things faster : When anything new is added to the application , a virtual dom is creted and it is reprented as a tree . Each element in the application is a node in this tree . So , whenever there is a change in the state of any element , a new virtual dom tree is created . This new Virtual dom tree is then compared with the previous virtual dom tree and make a note of the changes . After this , it finds the best possible ways to make these changes to the real DOM . Now only the updated part will get rendered on the page again. 
+
+
+Q1. When would you use useRef ?
+Ans. Then main use Cases :
+
+1. To store a ref to Dom element so you can later do something with them:
+Consider : 
+function TextInputWithFocusButton() {
+   const inputEl = useRef(null);
+   const onButtonClick = () => {
+       inputEl.current.focus();
+   };
+   return (
+       <>
+           <input ref={inputEl} type="text"/>
+           <button onClick={onButtonClick}>Focus the input</button>
+       </>
+   );
+}
+
+
+
+
+Q17: When writing a Custom Hook, what is the difference between it and a normal function?
+Answer
+Hooks use a stateful closure around the invocation of the function component to store the state on behalf of that component instance. That closure is maintained by React.
+
+Custom hook will only be "stateful" if you use state with useState inside (or something that implements useState),
+Hooks should be called from the React code only not from the regular JS functions. Hence, Hooks' scope is limited to the React code world and has more power to do a lot with React code,
+In the class-based components, the Hooks won't work but regular functions will.
+In the regular JS functions, you can't access useState, useEffect, useContext etc. but in react custom hooks I can.
+
