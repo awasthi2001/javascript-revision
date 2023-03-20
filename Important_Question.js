@@ -764,6 +764,6 @@ function intro(){
 }
 
 let fun = intro.bind(student2)
-fun()
+fun() 
 
 //This method returns a new function where the value of "this" keyword will be bound to the owner object which is provided as a parameter
