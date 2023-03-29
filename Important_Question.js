@@ -763,7 +763,13 @@ function intro(){
   console.log(`my name is ${this.name} and my age is ${this.age} and ward number is ${this.ward}`)
 }
 
-let fun = intro.bind(student2)
-fun() 
+let fun5 = intro.bind(student2)
+fun5() 
 
 //This method returns a new function where the value of "this" keyword will be bound to the owner object which is provided as a parameter
+
+let e = 5;
+let z = 6;
+
+e+= e>z ? e : z;// false ?5 : 6  => e+=6
+console.log(e)//11
