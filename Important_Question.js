@@ -773,3 +773,11 @@ let z = 6;
 
 e+= e>z ? e : z;// false ?5 : 6  => e+=6
 console.log(e)//11
+
+
+
+let array_of_key_valuepair = [["name","akshansh"],["age",21]]
+
+console.log(Object.fromEntries(array_of_key_valuepair))
+let obj8 = Object.fromEntries(array_of_key_valuepair);//Object.fromEntries we can convert array key value pairs to objects
+console.log(obj8)
