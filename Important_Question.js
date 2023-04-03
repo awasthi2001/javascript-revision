@@ -781,3 +781,14 @@ let array_of_key_valuepair = [["name","akshansh"],["age",21]]
 console.log(Object.fromEntries(array_of_key_valuepair))
 let obj8 = Object.fromEntries(array_of_key_valuepair);//Object.fromEntries we can convert array key value pairs to objects
 console.log(obj8)
+
+
+
+//
+let xx = [1,2,3]
+let yy = xx.map((num)=>{
+  xx.push(num+3)
+  return num+1
+})
+
+console.log(yy)//[2,3,4]
