@@ -792,3 +792,10 @@ let yy = xx.map((num)=>{
 })
 
 console.log(yy)//[2,3,4]
+
+
+//
+let x5 = {a:1,b:2};
+let y5 = {b:3};
+let z5 = {...x5,...y5};
+console.log(z5)//{a:1,b:3}
