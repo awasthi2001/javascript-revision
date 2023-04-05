@@ -799,3 +799,20 @@ let x5 = {a:1,b:2};
 let y5 = {b:3};
 let z5 = {...x5,...y5};
 console.log(z5)//{a:1,b:3}
+
+
+//finding common element in both array and pushing them in result array
+
+const arr11 = [1,100,10,20,50];
+const arr12 = [2,30,21,10,20]
+const resultt = []//10,20
+for(let i=0; i<arr11.length; i++){
+  for(let j=0; j<arr12.length; j++){
+    if(arr11[i]===arr12[j]){
+        resultt.push(arr11[i])
+        break;
+    }
+  }
+}
+console.log(resultt)
+
