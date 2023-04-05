@@ -845,6 +845,20 @@ function printPrime(n){
 }
 
 
+//printPrime(23)
 
+//Create a function to return the longest word in a string
 
-printPrime(23)
+let str55 = "my name is akshansh awasthiii"
+
+let arr55 = str55.split(" ");
+let ans55 = 0;
+let max55 = 0;
+for(let i=0; i<arr55.length; i++){
+    if(arr55[i].length>max55){
+        max55 = arr55[i].length;
+        ans55 = arr55[i];
+    }
+}
+
+console.log(ans55)
