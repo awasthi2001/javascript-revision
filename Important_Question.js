@@ -821,3 +821,30 @@ console.log(resultt)
 let x11 = [1,2,3]
 let[,,k] = x11;
 console.log(k)//3
+
+
+//Print prime numbers up to n numbers.
+
+function isPrime(n){
+  if(n==1){
+      return false;
+  }
+  for(let i=2; i<n; i++){
+      if(n%i==0){
+          return false;
+      }
+  }
+  return true;
+}
+function printPrime(n){
+  for(let i=1; i<=n; i++){
+      if(isPrime(i)){
+          console.log(i);
+      }
+  }
+}
+
+
+
+
+printPrime(23)
