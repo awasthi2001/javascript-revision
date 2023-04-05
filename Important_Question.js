@@ -816,3 +816,8 @@ for(let i=0; i<arr11.length; i++){
 }
 console.log(resultt)
 
+//
+
+let x11 = [1,2,3]
+let[,,k] = x11;
+console.log(k)//3
