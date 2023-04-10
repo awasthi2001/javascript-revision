@@ -862,3 +862,14 @@ for(let i=0; i<arr55.length; i++){
 }
 
 console.log(ans55)
+
+//quiz 
+
+console.log(bb)
+var bb;//here it will print undefined 
+//reason :- when we run js file a global execution context is created and this global execution context has two phases first phase
+// is called memory allocation phase and second phase is called code execution phase .. even before single line of code executed 
+// a variable and function stored in key balue pair where variable stored a spcial value called undefined and function stored 
+//whole code 
+//so in memory allocation phase it will store bb : undefined
+//and in code execution phase it will print undefined.
