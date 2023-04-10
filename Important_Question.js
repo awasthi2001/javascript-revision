@@ -873,3 +873,22 @@ var bb;//here it will print undefined
 //whole code 
 //so in memory allocation phase it will store bb : undefined
 //and in code execution phase it will print undefined.
+
+
+
+//sets
+
+const numss = new Set();
+
+numss.add(1);
+numss.add(2);
+numss.add(3);
+numss.add(1);
+
+numss.delete(1);
+
+console.log(numss.has(1))
+console.log(numss.size)
+//the anwer will be false 2 
+//because sets stores unique keys here first it will add 1 then 2 then 3 then again it will overwrite 1 and then it will delete it
+//so the final size will be 2
