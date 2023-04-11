@@ -892,3 +892,16 @@ console.log(numss.size)
 //the anwer will be false 2 
 //because sets stores unique keys here first it will add 1 then 2 then 3 then again it will overwrite 1 and then it will delete it
 //so the final size will be 2
+
+
+// 
+
+let xu = "b";
+let yu = "a";
+
+console.log(xu+yu+ +yu+yu);
+
+//b+a+ (+a) +a
+//+a attempts to convert a to a number 
+//because a is not a number the result is NaN
+//thats why the output is baNaNa
