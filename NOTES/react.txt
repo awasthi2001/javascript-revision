@@ -57,3 +57,11 @@ Importance of keys in react
 1. Keys should be given to array elements for providing a unique identity for each element.
 2. Without keys React does not understand the order of uniqueness of each element.
 3. With key react has an idea of which particular element is added , removed or updated.
+
+What is JSX ?
+Ans .   JSX stands for javascript xml . It allows us to write HTML inside react and place them in the dom.without using any mehods like 
+react.createelement or appendchild method.Jsx converts the html tags into react elements. 
+
+
+What is Babel ?
+Ans.  Babel is javascript compiler that is mainly used to convert ecmascript 2015+ code into a backward compatible version of javascript in current and older browser or enviroment . React uses babel to convert JSX into javascript.
