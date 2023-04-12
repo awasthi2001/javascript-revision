@@ -38,3 +38,14 @@ Hooks should be called from the React code only not from the regular JS function
 In the class-based components, the Hooks won't work but regular functions will.
 In the regular JS functions, you can't access useState, useEffect, useContext etc. but in react custom hooks I can.
 
+
+
+
+What is useState in React ?
+Ans. The useState() is used to maintain the local state of the component.When using the useState there are few things to note 
+
+1.SetState is kind of async in nature.
+2.SetState batches the updates.
+3. SetState can take  updater function which will be use the value from react store internally.
+So basically It doesn't do that instantly it goes to queue react is now runnig its internal logic to decide and after that it will update
+basically it tries to compare old state and new State if it is equal then it will not update the UI else it will update.
