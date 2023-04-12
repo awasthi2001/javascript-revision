@@ -49,3 +49,11 @@ Ans. The useState() is used to maintain the local state of the component.When us
 3. SetState can take  updater function which will be use the value from react store internally.
 So basically It doesn't do that instantly it goes to queue react is now runnig its internal logic to decide and after that it will update
 basically it tries to compare old state and new State if it is equal then it will not update the UI else it will update.
+
+What are keys in react ?
+Ans. A key is a special string attribute that needs to be included when using lists of element.
+
+Importance of keys in react 
+1. Keys should be given to array elements for providing a unique identity for each element.
+2. Without keys React does not understand the order of uniqueness of each element.
+3. With key react has an idea of which particular element is added , removed or updated.
