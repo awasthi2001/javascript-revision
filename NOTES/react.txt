@@ -65,3 +65,5 @@ react.createelement or appendchild method.Jsx converts the html tags into react 
 
 What is Babel ?
 Ans.  Babel is javascript compiler that is mainly used to convert ecmascript 2015+ code into a backward compatible version of javascript in current and older browser or enviroment . React uses babel to convert JSX into javascript.
+
+

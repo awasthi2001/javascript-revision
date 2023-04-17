@@ -905,3 +905,9 @@ console.log(xu+yu+ +yu+yu);
 //+a attempts to convert a to a number 
 //because a is not a number the result is NaN
 //thats why the output is baNaNa 
+
+//quiz
+
+let xarr = [1,2,3,4,5]
+let yans = xarr.filter((ele)=>ele>=3)
+console.log(yans)
