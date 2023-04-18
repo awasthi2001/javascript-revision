@@ -67,3 +67,17 @@ What is Babel ?
 Ans.  Babel is javascript compiler that is mainly used to convert ecmascript 2015+ code into a backward compatible version of javascript in current and older browser or enviroment . React uses babel to convert JSX into javascript.
 
 
+Difference b/w the functional Component and class components ?
+Ans. Functional Component :- 
+ 1. A functional Component is just a javascript function that that accepts props as an argument and returns jsx as their result.
+ 2. There is no render method used in functional Component.
+ 3. Functional component run from top to bottom and once the function is returned it can't be kept alive.
+ 4. constructors are not used in functional Component.
+
+   Class Component :-
+    
+ 1. A class component requires you to extend from React.Component and creates a render function which return a react element
+ 2. It must have a render method returning jsx
+ 3. Class components is instantiated and have different life cycle methods is kept alive and being run and invoked depending on phase of class
+ Component
+ 4. constructors are used as it needs to store state.
