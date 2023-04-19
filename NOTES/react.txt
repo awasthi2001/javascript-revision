@@ -81,3 +81,6 @@ Ans. Functional Component :-
  3. Class components is instantiated and have different life cycle methods is kept alive and being run and invoked depending on phase of class
  Component
  4. constructors are used as it needs to store state.
+
+
+ 
