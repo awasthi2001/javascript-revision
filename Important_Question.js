@@ -911,3 +911,42 @@ console.log(xu+yu+ +yu+yu);
 let xarr = [1,2,3,4,5]
 let yans = xarr.filter((ele)=>ele>=3)
 console.log(yans)
+
+
+
+//
+let str12 = "hello";
+let str2 = new String("hello");
+
+console.log(str12==str2)
+console.log(str12===str2)
+
+
+//reverse an array using recursion
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+//console.log("Welcome to Programiz!");
+function swap(arr,idx1,idx2){
+  let temp = arr[idx1];
+  arr[idx1]= arr[idx2];
+  arr[idx2] = temp;
+}
+function reverse(arr,idx1,idx2){
+ if(arr.length%2==0 && (idx1>idx2)){
+     return;
+ }else if(idx1==idx2){
+     return;
+ }
+  let temp = arr[idx1];
+  arr[idx1]= arr[idx2];
+  arr[idx2] = temp;
+  reverse(arr,idx1+1,idx2-1);
+}
+
+let reverarr = [1,2,3,4,5,15,16];
+//0 5
+//1 4
+//2 3
+reverse(reverarr,0,reverarr.length-1);
+console.log(reverarr);
