@@ -950,3 +950,7 @@ let reverarr = [1,2,3,4,5,15,16];
 //2 3
 reverse(reverarr,0,reverarr.length-1);
 console.log(reverarr);
+
+//quiz
+console.log("5"+2);//52
+console.log("5"-2)//3
