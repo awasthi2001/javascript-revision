@@ -960,3 +960,8 @@ console.log("5"-2)//3
 
 console.log(false=="0");
 console.log(false==0);
+
+//quiz
+
+console.log(2 && 5) //5
+console.log(2 || 5) //2
