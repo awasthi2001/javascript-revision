@@ -954,3 +954,9 @@ console.log(reverarr);
 //quiz
 console.log("5"+2);//52
 console.log("5"-2)//3
+
+
+//quiz
+
+console.log(false=="0");
+console.log(false==0);
