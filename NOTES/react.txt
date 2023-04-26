@@ -90,3 +90,6 @@ Answer : Controlled :- In a controlled component the values of the input element
 uncontrolled :- In an uncontrolled component the value of the input element
 is handled by dom . Input elements inside the uncontrolled
 component work just like normal html 
+
+Question : What are the props in React ?
+Answer :The props in react are the input to the react component. They can single valued or multiple valued . It almost looks similar to the html attribute . We can say that props are the inputs that be passed from parent component to child component.
