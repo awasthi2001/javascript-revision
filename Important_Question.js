@@ -963,5 +963,5 @@ console.log(false==0);
 
 //quiz
 
-console.log(2 && 5) //5
+console.log(2 && 5) //5 
 console.log(2 || 5) //2
