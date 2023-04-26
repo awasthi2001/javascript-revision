@@ -83,4 +83,10 @@ Ans. Functional Component :-
  4. constructors are used as it needs to store state.
 
 
- 
+
+Question : Difference between controlled components and uncontrolled components ?
+Answer : Controlled :- In a controlled component the values of the input element is controlled by react . We store the the state of the component inside the the code and by using event any changes made to the input element will be reflected in the code as well.
+
+uncontrolled :- In an uncontrolled component the value of the input element
+is handled by dom . Input elements inside the uncontrolled
+component work just like normal html 
