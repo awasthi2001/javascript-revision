@@ -1,64 +1,11 @@
 import { Router } from "express";
 import { UserModel } from "../Models/user.model.js";
-import jwt from 'jsonwebtoken'
-import bcrypt from 'bcrypt'
+import { handleLogin, handleRegister } from "../Controllers/user.controllers.js";
+
 
 export const UserRouter = Router();
 
-UserRouter.post('/register',async function (req, res) {
-    try {
-        let {Name,Email,Age,Password} = req.body;
-        let User= req.body;
-        let user = await UserModel.findOne({Email:Email});
-       if(user){
-          res.status(400).send({message :  'User Already Registered'})
-       }else{
-           delete User.Password;
-           bcrypt.hash(Password,4,async(err,pass)=>{
-            if(err){
-                console.log(err)
-            }else{
-                req.body.Password = pass;
-                await UserModel.create(req.body)
-                res.status(201).send({
-                    message : 'registered successfully'
-                })
-            }
-           })
-       }
-    } catch (error) {
-        res.status(500).send({
-            message : error
-        })
-    }
-})
+UserRouter.post('/register',handleRegister)
 
 
-UserRouter.post('/login',async function (req, res) {
-    try {
-        let {Name,Email,Age,Password,_id} = req.body;
-        let User= req.body;
-
-        let user = await UserModel.findOne({Email:Email});
-       if(user){
-           let check = bcrypt.compareSync(Password,user.Password);
-           if(check){
-            let token = jwt.sign(({user_id:User._id}),process.env.SecretKey)
-              res.status(200).send({
-                token : token,
-                message : 'logged in successfully'
-              })
-           }else{
-            res.status(200).send({
-                message : 'password mismatch'
-              })
-           }
-       }else{
-         
-       }
-    } catch (error) {
-        res.status(500).send({
-            message : error
-        })
-    }
-})
+UserRouter.post('/login',handleLogin)
