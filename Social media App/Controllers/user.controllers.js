@@ -22,7 +22,9 @@ export async function handleLogin(req, res) {
               })
            }
        }else{
-         
+        res.status(200).send({
+            message : 'wrong credentials'
+          })
        }
     } catch (error) {
         res.status(500).send({
