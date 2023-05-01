@@ -6,12 +6,11 @@ export async function handleLogin(req, res) {
     try {
         let {Name,Email,Age,Password,_id} = req.body;
         let User= req.body;
-
         let user = await UserModel.findOne({Email:Email});
        if(user){
            let check = bcrypt.compareSync(Password,user.Password);
            if(check){
-            let token = jwt.sign(({user_id:User._id}),process.env.SecretKey)
+            let token = jwt.sign(({user_id:user._id}),process.env.SecretKey)
               res.status(200).send({
                 token : token,
                 message : 'logged in successfully'
