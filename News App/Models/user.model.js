@@ -13,3 +13,11 @@ let userSchema = mongoose.Schema(
 
 
 export let UserModel = mongoose.model('user',userSchema)
+
+
+// {
+//     "Name" : "Akshansh",
+//     "Email" : "Akshansh@gmail.com",
+//     "Password" : "1234",
+//     "Age" : 24
+//   }
