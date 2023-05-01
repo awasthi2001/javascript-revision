@@ -1,0 +1,21 @@
+News App
+
+Backend :- 
+0. / Welcome to News App
+1. Register : - /Register post 
+{
+    Name : 
+    Email :
+    Password :
+    Age :
+}
+2. Login : - /Login  post
+
+3. /news - post request create a article
+  {
+    article : 
+    userid :
+    category : 
+  }
+4. /user - return user details
+5. 
