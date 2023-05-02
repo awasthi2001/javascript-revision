@@ -1,12 +1,17 @@
 import express from 'express';
 import { UserRouter } from './Routes/user.routes.js';
 import { connection } from './config/config.js';
+import { Authenticate } from './Middlewares/authenticator.js';
+import { ArticleRouter } from './Routes/article.routes.js';
 
 const app = express();
 app.use(express.json())
-
+app.get('/',(req,res)=>{
+   res.send("Welcome to the News App")
+})
 app.use('/user',UserRouter)
-
+app.use(Authenticate);
+app.use('/article',ArticleRouter)
 
 app.listen(8080,async()=>{
    let res = await connection();

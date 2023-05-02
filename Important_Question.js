@@ -965,3 +965,10 @@ console.log(false==0);
 
 console.log(2 && 5) //5 
 console.log(2 || 5) //2
+
+//quiz
+
+
+let sstr = "abc"
+let ystr  = [...sstr]
+console.log(ystr)//[a,b,c]
