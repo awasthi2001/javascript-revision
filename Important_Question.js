@@ -972,3 +972,9 @@ console.log(2 || 5) //2
 let sstr = "abc"
 let ystr  = [...sstr]
 console.log(ystr)//[a,b,c]
+
+
+//quiz 
+let xstr = "abc"
+xstr[1] = "d";
+console.log(xstr)//abc
