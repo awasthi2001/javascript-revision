@@ -978,3 +978,10 @@ console.log(ystr)//[a,b,c]
 let xstr = "abc"
 xstr[1] = "d";
 console.log(xstr)//abc
+
+
+//quiz
+
+console.log(true+false && true*false);//0
+//1+0 && 0
+//1 && 0 = 0
