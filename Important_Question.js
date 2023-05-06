@@ -985,3 +985,9 @@ console.log(xstr)//abc
 console.log(true+false && true*false);//0
 //1+0 && 0
 //1 && 0 = 0
+
+//quiz 
+
+let arrr = [1,2,3];
+arrr.unshift(0);
+console.log(arrr);//[0,1,2,3]
