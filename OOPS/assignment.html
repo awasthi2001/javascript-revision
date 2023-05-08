@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="counter">Counter :0</h1>
+    <button onclick="Reduce()" id="btnreduce">Reduce</button>
+    <button onclick="Add()">Add</button>
+</body>
+</html>
+<script>
+    class Counter{
+        #count;
+        constructor(count){
+           this.#count = count;
+        }
+
+        get counter(){
+            return this.#count;
+        }
+        set addcount(newvalue){
+            return this.#count +=newvalue
+        }
+        set reducecount(newvalue){
+              return this.#count -=newvalue
+        }
+    }
+     let counter = new Counter(0)
+    function Add(){
+        if(counter.counter>=1){
+             document.getElementById("btnreduce").disabled = false;
+        }
+        counter.addcount=1
+        document.querySelector("h1").innerText = `Count : ${counter.counter}`;
+    }
+
+    function Reduce(){
+        if(counter.counter>=1){
+              document.getElementById("btnreduce").disabled = false;
+        }else if(counter.counter==0){
+           return document.getElementById("btnreduce").disabled = true;
+        }
+        counter.reducecount=1
+        document.querySelector("h1").innerText = `Count : ${counter.counter}`;
+    }
+    window.onload = ()=>{
+        if(counter.counter==0){
+           return  document.getElementById("btnreduce").disabled = true;
+        }
+        document.querySelector("h1").innerText = `Count : ${counter.counter}`;
+    }
+</script>
