@@ -94,3 +94,30 @@ class Manager extends User2{
 
 let manager = new Manager();
 manager.run()
+
+
+//Polymerphism (Many Forms)
+
+class firstClass {
+    add() {
+        console.log("First Method")
+    }
+}
+class secondClass extends firstClass {
+    add() {
+        console.log(30 + 40);
+    }
+}
+class thirdClass extends secondClass {
+    add() {
+        console.log("Last Method")
+    }
+}
+let ob = new firstClass();
+let ob2 = new secondClass();
+let ob3 = new thirdClass();
+ob.add();
+ob2.add();
+ob3.add();
+//The Code above shows how to implement inheritance polymorphism in JavaScript. In this code, we have a class and in this class, we have the “add” method, and we inherit this class in the Second Class. We create different classes with the same method name and different definitions of methods. This example shows us the same method will perform different operations depending on the object upon which it is called.
+
