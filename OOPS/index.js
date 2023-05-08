@@ -35,3 +35,32 @@ class suv extends Car{
 
 const c2 = new suv("mahindra","BS6",6,"black","Manual")
 console.log(c2)
+
+
+//Encapsulation (Data hiding)
+
+class User {
+    #name;
+    #score;
+    constructor(name,score){
+        this.#name = name
+        this.#score = score
+    }
+    //getter
+    get userName(){
+        return this.#name;
+    }
+    get userScore(){
+        return this.#score;
+    }
+    //setter
+    set userScore(newScore){
+      this.#score = newScore;
+    }
+}
+
+
+const user1 = new User("ak",10)
+console.log(user1.userName)
+user1.userScore = 20
+console.log(user1.userScore)
