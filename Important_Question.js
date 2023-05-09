@@ -991,3 +991,10 @@ console.log(true+false && true*false);//0
 let arrr = [1,2,3];
 arrr.unshift(0);
 console.log(arrr);//[0,1,2,3]
+
+//quiz
+
+const stingstr = "abc";
+
+let [qq,rr,tt] = stingstr;
+console.log(qq,rr,tt) //a b c
