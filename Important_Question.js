@@ -998,3 +998,10 @@ const stingstr = "abc";
 
 let [qq,rr,tt] = stingstr;
 console.log(qq,rr,tt) //a b c
+
+
+//quiz
+
+let arrx = [[1,2],[3,4]];
+let arry  = arrx.flat();
+console.log(arry)
