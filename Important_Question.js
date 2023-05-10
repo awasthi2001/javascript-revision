@@ -1004,4 +1004,4 @@ console.log(qq,rr,tt) //a b c
 
 let arrx = [[1,2],[3,4]];
 let arry  = arrx.flat();
-console.log(arry)
+console.log(arry) //the answer will be [1,2,3,4]
