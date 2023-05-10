@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { ArticleModel } from "../Models/article.model.js";
-
+import { UserModel } from "../Models/user.model.js";
 export const ArticleRouter = Router();
 
 ArticleRouter.get("/all", async(req, res) => {
@@ -18,8 +18,16 @@ ArticleRouter.get("/all", async(req, res) => {
   }
 });
 
-ArticleRouter.get("/myarticles", (req, res) => {
+ArticleRouter.get("/myarticles", async(req, res) => {
   try {
+      //console.log(req.body)
+      let {user_id} =  req.body;
+      let articles = await ArticleModel.find({user_id :user_id })
+      let {Name}  = await UserModel.findOne({_id:user_id})
+      res.send({
+        Author_Name : Name,
+        articles : articles
+      })
   } catch (error) {
     res.status(500).send({
         message : error
@@ -27,7 +35,7 @@ ArticleRouter.get("/myarticles", (req, res) => {
   }
 });
 
-ArticleRouter.post("/", async(req, res) => {
+ArticleRouter.post("/create", async(req, res) => {
   try {
     if(req.body){
         await ArticleModel.create(req.body)
