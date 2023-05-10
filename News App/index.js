@@ -10,6 +10,10 @@ app.get('/',(req,res)=>{
    res.send("Welcome to the News App")
 })
 app.use('/user',UserRouter)
+
+app.get('*',(req,res)=>{
+   res.send("<h1 style='text-align : center; color : blue;'>Not Found</h1>")
+})
 app.use(Authenticate);
 app.use('/article',ArticleRouter)
 
