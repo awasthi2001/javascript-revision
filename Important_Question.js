@@ -1012,3 +1012,12 @@
 let x_ARR = [1,2,3,4];
 let y_ARR = x_ARR.find((n)=>n>1)
 console.log(y_ARR)//2 because find method returns the first element where the condition is true
+
+//quiz
+
+function foo1(x=5,y=10){
+    console.log(x+y);
+}
+
+foo1(null,3)//here it will log 3 in console
+//When you call foo1(null,3), you are passing null as the first argument, which is treated as a valid argument and overrides the default value of 5 for the parameter x. So the value of x becomes null which is coerced to 0 in the addition operation. The value of y is 3 which is added to x resulting in 0 + 3 = 3. Therefore, the output of console.log(x+y) is 3.
