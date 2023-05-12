@@ -27,14 +27,15 @@
        }
     }
     let Todo1 = new Todo();
+    
  let todo_inp = document.getElementById("todo");
  let alltodo = Todo1.gettodos
+ 
  function AddTodo(){
     let todo = {
         todo : todo_inp.value,
         status : false
     }
-   // console.log(todo)
    Todo1.addtodo = todo;
    display()
  }
