@@ -50,12 +50,33 @@ ArticleRouter.post("/create", async(req, res) => {
   }
 });
 
-ArticleRouter.patch("/:articleId", (req, res) => {
+ArticleRouter.patch("/:articleId", async(req, res) => {
   try {
-  } catch (error) {}
+    let {articleId} = req.params;
+    let {user_id} = req.body;
+
+    let article = await ArticleModel.findById({_id :articleId});
+    if(article.user_id===user_id) {
+      await ArticleModel.findByIdAndUpdate(articleId,req.body);
+      res.status(200).send({
+        message : 'Article updated successfully'
+      })
+    }else{
+      res.status(401).send({
+        message : 'Unauthorized' 
+      })
+    }
+  } catch (error) {
+    res.status(500).send({
+      message : error
+    })
+  }
 });
 
 ArticleRouter.delete("/:articleId", (req, res) => {
   try {
   } catch (error) {}
 });
+
+//there is one userid which is in the article body and there is userid which is in  the req.body which we will recive from jwt token
+//if both are equal then only user can update or delete the article
