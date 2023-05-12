@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+</head>
+<body>
+    <input type="text" name="" id="todo">
+    <button onclick="AddTodo()" >Add</button>
+    <div id="todos_parent"></div>
+</body>
+</html>
+<script>
+    class Todo{
+        #todos;
+        constructor(){
+            this.#todos = []
+        }
+       get gettodos(){
+        return this.#todos;
+       }
+       set addtodo(todo){
+        //console.log(todo)
+        this.#todos.push(todo);
+       }
+    }
+    let Todo1 = new Todo();
+ let todo_inp = document.getElementById("todo");
+ let alltodo = Todo1.gettodos
+ function AddTodo(){
+    let todo = {
+        todo : todo_inp.value,
+        status : false
+    }
+   // console.log(todo)
+   Todo1.addtodo = todo;
+   display()
+ }
+ function deletetodo(idx){
+    alltodo.splice(idx,1)
+    display()
+ }
+ function toggletodo(idx,status){
+      alltodo.forEach(function(todo,id){
+      if(id==idx){
+         todo.status = !status
+      }
+    })
+   display()
+ }
+ function display(){
+ let todos_parent = document.getElementById("todos_parent");
+ todos_parent.innerText = ''
+  alltodo.map((ele,idx)=>{
+    let todo_Child = document.createElement("div");
+    todo_Child.innerHTML = ` <p>${ele.todo}</p>
+    ` 
+   let btn = document.createElement("button");
+   btn.innerText = "Delete"
+   let togglebtn = document.createElement("button");
+   togglebtn.innerText =`${ele.status?"not_done":"done"}`
+   togglebtn.addEventListener("click",()=>{toggletodo(idx,ele.status);})
+   btn.addEventListener("click",()=>{deletetodo(idx)})
+    // todo_Child.appendChild(btn);
+    todo_Child.append(btn,togglebtn)
+    todos_parent.appendChild(todo_Child)
+  })
+ }
+ display()
+</script>
