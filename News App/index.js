@@ -11,7 +11,6 @@ app.get('/',(req,res)=>{
 })
 
 app.use('/user',UserRouter)
-app.use(Authenticate);
 app.use('/article',ArticleRouter)
 app.get('*',(req,res)=>{
    res.send("<h1 style='text-align : center; color : blue;'>Not Found</h1>")
