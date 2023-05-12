@@ -6,10 +6,11 @@ import {
   handlemyarticle,
   handleupdate,
 } from "../Controllers/article.controllers.js";
+import { Authenticate } from "../Middlewares/authenticator.js";
 export const ArticleRouter = Router();
 
 ArticleRouter.get("/all", handleall);
-
+ArticleRouter.use(Authenticate);
 ArticleRouter.get("/myarticles", handlemyarticle);
 
 ArticleRouter.post("/create", handlecreate);
