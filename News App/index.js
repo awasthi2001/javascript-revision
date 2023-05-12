@@ -9,14 +9,13 @@ app.use(express.json())
 app.get('/',(req,res)=>{
    res.send("Welcome to the News App")
 })
-app.use('/user',UserRouter)
 
+app.use('/user',UserRouter)
+app.use(Authenticate);
+app.use('/article',ArticleRouter)
 app.get('*',(req,res)=>{
    res.send("<h1 style='text-align : center; color : blue;'>Not Found</h1>")
 })
-app.use(Authenticate);
-app.use('/article',ArticleRouter)
-
 app.listen(8080,async()=>{
    let res = await connection();
    console.log(res);
