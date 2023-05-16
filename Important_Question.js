@@ -1044,3 +1044,17 @@ so it will be !(false)
 and finally because of not operator the final output
 will be true;
 */
+
+
+const arr = [1,2,3,4,5];
+arr.length = 0;
+
+console.log(arr);
+
+/*
+lets break it down 
+1. we are decalaring an array with 5 elements
+2. we are assigning the arr.length to 0;
+3. because we are assigning the arr.length to 0 so 
+the final array will be empty
+*/
