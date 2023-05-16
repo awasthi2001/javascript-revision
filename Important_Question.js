@@ -1030,3 +1030,17 @@
 
 // console.log(res);//[2]
 // console.log(arr);//[1,2,3,4,5]
+
+let x = 10;
+let y = 5;
+
+console.log(!(x<y))
+/*
+Let's break it down
+! operator change true to false and false to true
+
+so first it will check !(10<5)
+so it will be !(false)
+and finally because of not operator the final output
+will be true;
+*/
