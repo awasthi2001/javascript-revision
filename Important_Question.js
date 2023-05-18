@@ -1058,3 +1058,9 @@ lets break it down
 3. because we are assigning the arr.length to 0 so 
 the final array will be empty
 */
+
+let xarr = [1, 2, 3]
+let yarr = xarr.filter((val)=>val>1);//[2,3]
+xarr = [4,5,6];
+yarr = yarr.map((val)=>val*2)//[4,6]
+console.log(xarr, yarr)//[4,5,6] , [4,6]
