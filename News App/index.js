@@ -9,9 +9,8 @@ app.use(express.json())
 app.get('/',(req,res)=>{
    res.send("Welcome to the News App")
 })
-
 app.use('/user',UserRouter)
-app.use('/article',ArticleRouter)
+app.use('/article',ArticleRouter) 
 app.get('*',(req,res)=>{
    res.send("<h1 style='text-align : center; color : blue;'>Not Found</h1>")
 })
