@@ -1064,3 +1064,20 @@ let yarr = xarr.filter((val)=>val>1);//[2,3]
 xarr = [4,5,6];
 yarr = yarr.map((val)=>val*2)//[4,6]
 console.log(xarr, yarr)//[4,5,6] , [4,6]
+
+
+
+//quiz 
+let fun = ()=>{
+    return {y : "z"}
+}
+
+console.log(typeof fun().y);
+
+/*
+let's break it down
+1. we are calling the function fun which is returning object
+2. then we are checking the typeof fun().y
+fun will return {y:"z"}
+ typeof fun().y is string
+*/
