@@ -1031,10 +1031,10 @@
 // console.log(res);//[2]
 // console.log(arr);//[1,2,3,4,5]
 
-let x = 10;
-let y = 5;
+// let x = 10;
+// let y = 5;
 
-console.log(!(x<y))
+// console.log(!(x<y))
 /*
 Let's break it down
 ! operator change true to false and false to true
@@ -1068,11 +1068,11 @@ console.log(xarr, yarr)//[4,5,6] , [4,6]
 
 
 //quiz 
-let fun = ()=>{
-    return {y : "z"}
-}
+// let fun = ()=>{
+//     return {y : "z"}
+// }
 
-console.log(typeof fun().y);
+// console.log(typeof fun().y);
 
 /*
 let's break it down
@@ -1080,4 +1080,19 @@ let's break it down
 2. then we are checking the typeof fun().y
 fun will return {y:"z"}
  typeof fun().y is string
+*/
+
+
+//quiz
+let x = (a="b")=>{
+    console.log(a)
+}
+
+x();
+x("c")
+
+/*
+x()// this function is required parameters but we are not giving it so it will take the default value and print b
+x("c") // here we are passing the parameter so it will print c
+
 */
