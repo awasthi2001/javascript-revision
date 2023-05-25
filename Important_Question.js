@@ -1096,3 +1096,16 @@ x()// this function is required parameters but we are not giving it so it will t
 x("c") // here we are passing the parameter so it will print c
 
 */
+
+
+
+//quiz
+
+let a = new Map();
+console.log(typeof a)
+
+/*
+here it will print object 
+because we are making an instance of Map class
+and also there is no datatype called Map
+*/
