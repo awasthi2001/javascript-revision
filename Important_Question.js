@@ -1108,4 +1108,4 @@ console.log(typeof a)
 here it will print object 
 because we are making an instance of Map class
 and also there is no datatype called Map
-*/
+*/ 
