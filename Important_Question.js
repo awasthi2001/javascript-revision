@@ -1109,3 +1109,12 @@ here it will print object
 because we are making an instance of Map class
 and also there is no datatype called Map
 */ 
+
+
+//quiz
+
+
+let aa = [1,2,3,4,5]
+let bb = aa.includes(4-3);
+
+console.log(bb)
