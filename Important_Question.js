@@ -1118,3 +1118,11 @@ let aa = [1,2,3,4,5]
 let bb = aa.includes(4-3);
 
 console.log(bb)
+
+/*
+here it will print true because first it will evaluate
+4-3 = 1 
+and then includes method check 1 is there or not
+because one is there it will print true
+
+*/
