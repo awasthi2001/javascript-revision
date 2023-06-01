@@ -88,7 +88,7 @@ fs.readFile('./input2.txt',{encoding:'utf-8'},(err,data)=>{
         console.log(err)
     }else{
         console.log(data)
-    }    
+    }     
 })
 
 const data = fs.readFileSync('./input1.txt',{encoding:'utf-8'})
