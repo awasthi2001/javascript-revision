@@ -1140,3 +1140,30 @@ find method returns the element where the condition is true
 here we have given a array so 2%2==0 so it will return 2
 
 */
+
+
+//quiz
+
+let f = 10;
+let g  = 0;
+
+console.log(f/g)
+
+/*
+Answer: Infinity
+
+Explanation:
+Divide by Zero is considered a particular case by most programming languages. Any number can never be divided by zero because its result is indeterminate.
+
+When JavaScript encounters any Divided By Zero expression, it doesn't throw an exception.
+
+Reasons 🤔
+JavaScript is a dynamically typed language, and it performs type coercion. Type coercion is the automatic or implicit conversion of values from one data type to another.
+
+Throwing exceptions at runtime is inconvenient for JavaScript.
+
+Dividing the number 0 by 0 returns NaN
+Dividing the positive number by 0 returns Infinity
+Dividing the negative number by 0 returns -Infinity
+
+*/
