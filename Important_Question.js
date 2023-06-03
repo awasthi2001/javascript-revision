@@ -1167,3 +1167,7 @@ Dividing the positive number by 0 returns Infinity
 Dividing the negative number by 0 returns -Infinity
 
 */
+
+//quiz
+
+console.log(Math.max(1,5,2))
