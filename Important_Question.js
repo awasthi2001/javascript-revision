@@ -1171,3 +1171,17 @@ Dividing the negative number by 0 returns -Infinity
 //quiz
 
 console.log(Math.max(1,5,2))
+
+
+//quiz 
+
+let u = [99];
+
+let v = u instanceof Object;
+
+console.log(v)
+
+/*
+The instanceof operator checks if an u is an instance of a Object. It returns true if the object is an instance, and false otherwise.
+An array in JavaScript is also an object, and since u is an array (which is an object), the instanceof check for Object will return 'true'.
+*/
