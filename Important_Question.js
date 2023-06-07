@@ -1185,3 +1185,18 @@ console.log(v)
 The instanceof operator checks if an u is an instance of a Object. It returns true if the object is an instance, and false otherwise.
 An array in JavaScript is also an object, and since u is an array (which is an object), the instanceof check for Object will return 'true'.
 */
+
+
+//quiz
+
+
+let c = 0;
+console.log(c++);
+console.log(++c);
+
+/*
+1. we are assigning a variable to 0
+2. here we are incrementing the c by 1 but in console.log it will print 0 only
+3. here we are doing pre incrementing by 1 and the value of c is already 1 so it will print 2 in the console
+
+*/
