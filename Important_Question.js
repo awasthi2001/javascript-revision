@@ -1205,14 +1205,28 @@ console.log(++c);
 
 //quiz
 
-let str = "abc";
-let ans_Str = str.substring(2,0);
-console.log(ans_Str)
+// let str = "abc";
+// let ans_Str = str.substring(2,0);
+// console.log(ans_Str)
 
 /*
 In JavaScript, the substring() method is used to extract a portion of a string and returns the extracted part as a new string. It takes two parameters: the starting index and the ending index (optional). The substring() method extracts characters from the starting index up to, but not including, the ending index.
 In your code, you have assigned the value "abc" to the variable x. Then, you are using the substring() method on x with the starting index of 2 and the ending index of 0.
 However, when the starting index is greater than the ending index, the substring() method swaps the two values. So, in this case, it becomes x.substring(0, 2).
 The correct result should be "ab".
+
+*/
+
+
+//quiz
+
+let str = "x";
+let ans_str = str+ undefined;
+
+console.log(ans_str)
+
+/*
+Answer is 'xundefined'
+Here the type of str variable is string and ans_str is equals to( a + undefined ) where '+' operater performs typecasting and convert it into string data type.
 
 */
