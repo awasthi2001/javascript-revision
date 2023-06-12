@@ -1220,13 +1220,28 @@ The correct result should be "ab".
 
 //quiz
 
-let str = "x";
-let ans_str = str+ undefined;
+// let str = "x";
+// let ans_str = str+ undefined;
 
-console.log(ans_str)
+// console.log(ans_str)
 
 /*
 Answer is 'xundefined'
 Here the type of str variable is string and ans_str is equals to( a + undefined ) where '+' operater performs typecasting and convert it into string data type.
 
+*/
+
+
+//quiz
+
+setTimeout(()=>{
+    console.log("one")
+},0)
+
+console.log("two")
+
+/*
+Explanation:- setTimeout is a asynchronous function which is not supported by JavaScript engine. So whenever asynchronous or callback function are called JavaScript engine will send those asynchronous and callback function to the web api where a separate thread will be created and web api wait till the specified time of asynchronous function is not finished once the asynchronous operation time out is completed they are sent to event queue.
+Now, event loop will check whether the stack is empty or not, once the stack become empty event loop will take the task from event queue and push into the stack.
+And JavaScript engine will run Synchonously. So, JavaScript engine will first print the two and print asynchronous function i.e one.
 */
