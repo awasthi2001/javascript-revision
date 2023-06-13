@@ -1234,14 +1234,34 @@ Here the type of str variable is string and ans_str is equals to( a + undefined 
 
 //quiz
 
-setTimeout(()=>{
-    console.log("one")
-},0)
+// setTimeout(()=>{
+//     console.log("one")
+// },0)
 
-console.log("two")
+// console.log("two")
 
 /*
 Explanation:- setTimeout is a asynchronous function which is not supported by JavaScript engine. So whenever asynchronous or callback function are called JavaScript engine will send those asynchronous and callback function to the web api where a separate thread will be created and web api wait till the specified time of asynchronous function is not finished once the asynchronous operation time out is completed they are sent to event queue.
 Now, event loop will check whether the stack is empty or not, once the stack become empty event loop will take the task from event queue and push into the stack.
 And JavaScript engine will run Synchonously. So, JavaScript engine will first print the two and print asynchronous function i.e one.
 */
+
+
+//quiz
+
+let x_arr = [1,2,3,5];
+
+x_arr.forEach((e)=>{
+    if(e<3 || e===5){
+        return;
+    }
+    console.log(e);
+})
+
+
+/*
+we are using forEach here 
+inside it there is a condition if e<3 OR e===5 then return;
+here return will work like a continue keyword
+so finally it will print 3 only
+*/ 
