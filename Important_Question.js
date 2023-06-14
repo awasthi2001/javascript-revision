@@ -1265,3 +1265,15 @@ inside it there is a condition if e<3 OR e===5 then return;
 here return will work like a continue keyword
 so finally it will print 3 only
 */ 
+
+
+//quiz
+
+let n = [1,2,3,4,5]
+
+let p = n.every((e)=>e>0);
+console.log(p)
+
+/*
+every method checks all values for a given condition if condition is true for all element then returns true otherwise false
+*/
