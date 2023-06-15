@@ -1269,11 +1269,32 @@ so finally it will print 3 only
 
 //quiz
 
-let n = [1,2,3,4,5]
+// let n = [1,2,3,4,5]
 
-let p = n.every((e)=>e>0);
-console.log(p)
+// let p = n.every((e)=>e>0);
+// console.log(p)
 
 /*
 every method checks all values for a given condition if condition is true for all element then returns true otherwise false
+*/
+
+
+//quiz
+
+
+let n = [[2,3],[4,[5]]]
+
+let p = n.flat();
+console.log(p)
+
+
+/*
+The flat() method concatenates sub array elements.
+Syntax - array.flat(depth)
+Depth means how deep a nested array should be flattened and the default value is 1.
+So the answer of the question is
+[2,3,4,[5]]
+but if I use, a.flat(2) then the answer will be
+[2,3,4,5]
+
 */
