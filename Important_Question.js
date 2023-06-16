@@ -1298,3 +1298,22 @@ but if I use, a.flat(2) then the answer will be
 [2,3,4,5]
 
 */
+
+
+
+//quiz
+
+
+let x_val = "Hello"
+let y_obj = {
+    x_val : "Bye"
+}
+
+console.log(y_obj[x_val])
+
+/*
+Ans is undefined
+Because
+It tries to access y_obj[x_val] which results in y_obj["Hello"]
+If y_obj.x_val is invoked it results in "Bye"
+*/
