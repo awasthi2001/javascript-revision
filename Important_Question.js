@@ -1301,6 +1301,8 @@ but if I use, a.flat(2) then the answer will be
 
 
 
+
+
 //quiz
 
 
@@ -1316,4 +1318,23 @@ Ans is undefined
 Because
 It tries to access y_obj[x_val] which results in y_obj["Hello"]
 If y_obj.x_val is invoked it results in "Bye"
+*/
+
+
+
+//quiz
+
+
+let aarr = [1,2,3,4,5];
+
+let index = aarr.indexOf(3);
+console.log(aarr[index])
+
+
+/*
+Answer will be 3
+Explanation:- indexOf(3) is present at array's location 2 and array[index] i.e array[2] is have value 3 .
+Note:- indexOf() will iterate through the array to find the value present inside the IndexOf() and will return the index of that value.
+
+
 */

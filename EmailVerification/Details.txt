@@ -1,0 +1,5 @@
+Email Verification is a technique in node.js which is used to ensure whether the provided email corresponds to an exising user or not . becuase otherwise the database will become filled up with unnecessary users.
+
+The process goes like that we send some kind of token to email and the user sends the get request along with that token now if the get request consits of the exact token we earlier sent from the server then email is considered as verified.
+
+After installation, we can proceed to generate a token with jwt and send an email with nodemailer here we are using Gmail as a service for simplification but the fundamental concepts remain the same. 
